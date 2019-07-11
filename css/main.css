@@ -165,15 +165,17 @@ nav ul {
   border: 2px solid red;
 }
 
-.project img{
-  width: 80%;
+.portfolio-image {
+  border: 2px dashed blue;
+}
 
-
+.project img {
+  width: 50%;
 }
 
 /***** ABOUT SECTION *****/
 #about {
-  background: url('../img/hero2.jpg')
+  background: url('../img/about-me-vadim-sherbakov-unsplash.jpg')
 }
 
 
