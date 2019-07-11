@@ -16,6 +16,13 @@ html {
   /* font-size: 1em; ORIGINAL */
   font-size: 16px;
   line-height: 1.4;
+  /* width not included in ORIGINAL*/
+  width: 100%;
+}
+
+/*body not included in ORIGINAL*/
+body {
+  width: 100%;
 }
 
 /*
@@ -101,7 +108,7 @@ textarea {
 
 /***** BASE STYLES *****/
 body {
-  background: #1f202b;
+  background-color: #1f202b;
   color: #ffffff;
 }
 
@@ -145,7 +152,7 @@ nav ul {
 
 #hero {
   border: 5px dashed purple;
-  background: url('../img/hero-fabian-grohs-unsplash.jpg');
+  background-image: url('../img/hero-fabian-grohs-unsplash.jpg');
   background-size: cover;
   height: 40em;
 }
@@ -175,7 +182,7 @@ nav ul {
 
 /***** ABOUT SECTION *****/
 #about {
-  background: url('../img/about-me-vadim-sherbakov-unsplash.jpg')
+  background-image: url('../img/about-me-vadim-sherbakov-unsplash.jpg')
 }
 
 
