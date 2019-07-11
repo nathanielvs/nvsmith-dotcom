@@ -116,6 +116,9 @@ a:hover {
 .wrapper {
 }
 
+.photo-credit {
+  font-size: .5em;
+}
 
 
 /***** HEADER *****/
@@ -142,6 +145,9 @@ nav ul {
 
 #hero {
   border: 5px dashed purple;
+  background: url('../img/hero-fabian-grohs-unsplash.jpg');
+  background-size: cover;
+  height: 40em;
 }
 
 #hero span {
@@ -151,12 +157,24 @@ nav ul {
 
 
 /***** MAIN PORTFOLIO*****/
+#portfolio {
+
+}
+
+.project {
+  border: 2px solid red;
+}
+
+.project img{
+  width: 80%;
 
 
-
+}
 
 /***** ABOUT SECTION *****/
-
+#about {
+  background: url('../img/hero2.jpg')
+}
 
 
 
