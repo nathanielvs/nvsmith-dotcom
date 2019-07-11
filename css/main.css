@@ -13,7 +13,8 @@
 
 html {
   color: #222;
-  font-size: 1em;
+  /* font-size: 1em; ORIGINAL */
+  font-size: 16px;
   line-height: 1.4;
 }
 
@@ -97,6 +98,72 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+
+/***** BASE STYLES *****/
+body {
+  background: #1f202b;
+  color: #ffffff;
+}
+
+a {
+  color: #64a9df;
+}
+
+a:hover {
+  color: #646edf;
+}
+
+.wrapper {
+}
+
+
+
+/***** HEADER *****/
+header {
+  border: 2px solid red;
+}
+
+header #banner-bar{
+  border: 5px solid green;
+}
+
+#name h1{
+  font-size: 1em;
+}
+
+nav {
+  border: 2px solid cyan;
+}
+
+nav ul {
+  list-style: none;
+  font-size: 1em;
+}
+
+#hero {
+  border: 5px dashed purple;
+}
+
+#hero span {
+  color: #fa0074;
+}
+
+
+
+/***** MAIN PORTFOLIO*****/
+
+
+
+
+/***** ABOUT SECTION *****/
+
+
+
+
+/***** FOOTER CONTACT *****/
+
+
+
 
 /* ==========================================================================
    Helper classes
@@ -263,4 +330,3 @@ textarea {
     page-break-after: avoid;
   }
 }
-
