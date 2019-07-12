@@ -145,16 +145,19 @@ nav {
   border: 2px solid cyan;
 }
 
-nav ul {
+nav ul{
+  padding: 0;
   list-style: none;
   font-size: 1em;
+  border: 2px solid orange;
 }
+
 
 #hero {
   border: 5px dashed purple;
-  background-image: url('../img/hero-fabian-grohs-unsplash.jpg');
+  /*background-image: url('../img/hero-fabian-grohs-unsplash.jpg');
   background-size: cover;
-  height: 40em;
+  height: 40em;*/
 }
 
 #hero span {
@@ -165,6 +168,7 @@ nav ul {
 
 /***** MAIN PORTFOLIO*****/
 #portfolio {
+  border: 2px solid yellow;
 
 }
 
@@ -172,24 +176,43 @@ nav ul {
   border: 2px solid red;
 }
 
+
+
 .portfolio-image {
+  margin: 0;
   border: 2px dashed blue;
 }
 
-.project img {
-  width: 50%;
-}
+
 
 /***** ABOUT SECTION *****/
 #about {
-  background-image: url('../img/about-me-vadim-sherbakov-unsplash.jpg')
+  /*background-image: url('../img/about-me-vadim-sherbakov-unsplash.jpg');*/
+  border: 2px solid magenta;
+}
+
+#personal-statement {
+  border: 2px solid green;
+}
+
+#what-now {
+  border: 2px solid red;
 }
 
 
 
 /***** FOOTER CONTACT *****/
+footer {
+  border: 2px solid green;
+}
 
+address {
+  border: 2px solid yellow;
+}
 
+#copyright {
+  border: 2px solid red;
+}
 
 
 /* ==========================================================================
