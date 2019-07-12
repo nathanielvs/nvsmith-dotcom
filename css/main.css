@@ -127,6 +127,11 @@ h1, h2, h3, h4, h5, h6 {
   font-family: 'Roboto Mono', monospace;
 }
 
+.heading {
+  text-align: center;
+  color: #fa0074;
+}
+
 /***** FONTS *****/
 /*font-family: 'Quando', serif;*/
 /*font-family: 'Kadwa', serif;*/
@@ -141,7 +146,10 @@ header #banner-bar {
 
 #name h1 {
   font-size: 1em;
-  /*font-size: 4vw; /*font scaling */
+  font-size: 4vw; /*font scaling */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 nav {
@@ -151,12 +159,18 @@ nav {
 nav ul {
   list-style: none;
   font-size: 1em;
+  padding: 0;
   /*font-size: 4vw; /*font scaling */
   border: 2px solid orange;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 nav ul li {
   border: 2px solid red;
+  width: 33.3%;
+  text-align: center;
 }
 
 #hero {
@@ -176,7 +190,7 @@ nav ul li {
 }
 
 .project {
-  border: 2px solid red;
+  border: 5px solid red;
 }
 
 .portfolio-image {
@@ -191,16 +205,17 @@ nav ul li {
 }
 
 #personal-statement {
-  border: 2px solid green;
+  /*border: 2px solid green;*/
 }
 
 #what-now {
-  border: 2px solid red;
+  /*border: 2px solid red;*/
 }
 
 /***** FOOTER CONTACT *****/
 footer {
-  border: 2px solid green;
+  /*border: 2px solid green;*/
+  text-align: center;
 }
 
 address {
@@ -209,7 +224,7 @@ address {
 }
 
 #copyright {
-  border: 2px solid red;
+  /*border: 2px solid red;*/
 }
 
 /* ==========================================================================
