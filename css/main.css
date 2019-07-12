@@ -110,6 +110,7 @@ textarea {
 body {
   background-color: #1f202b;
   color: #ffffff;
+  font-family: 'Kadwa', serif;
 }
 
 a {
@@ -126,6 +127,16 @@ a:hover {
 .photo-credit {
   font-size: .5em;
 }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Roboto Mono', monospace;
+}
+
+/***** FONTS *****/
+/*font-family: 'Quando', serif;*/
+/*font-family: 'Kadwa', serif;*/
+
+
 
 
 /***** HEADER *****/
@@ -208,6 +219,7 @@ footer {
 
 address {
   border: 2px solid yellow;
+  font-style: normal;
 }
 
 #copyright {
