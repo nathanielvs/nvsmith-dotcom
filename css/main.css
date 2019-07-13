@@ -101,11 +101,18 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-/***** BASE STYLES *****/
+
+
+
+
+
+
+/***** ===== BASE STYLES ===== *****/
 body {
   background-color: #1f202b;
   color: #ffffff;
   font-family: 'Kadwa', serif;
+  padding: 5%;
 }
 
 a {
@@ -121,6 +128,7 @@ a:hover {
 .photo-credit {
   font-size: .5em;
   text-align: right;
+  color: #9c9c9c;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -133,27 +141,32 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /***** FONTS *****/
-/*font-family: 'Quando', serif;*/
-/*font-family: 'Kadwa', serif;*/
-/***** HEADER *****/
+/*font-family: 'Roboto Mono', monospace;*/
+/*font-family: 'Kadwa', serif
+
+
+
+
+
+/***** ===== HEADER ===== *****/
 header {
-  border: 2px solid red;
+  /*border: 2px solid red;*/
 }
 
 header #banner-bar {
-  border: 5px solid green;
+/*border: 5px solid green;*/
 }
 
 #name h1 {
   font-size: 1em;
-  font-size: 4vw; /*font scaling */
+  /*font-size: 4vw; /*font scaling */
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 nav {
-  border: 2px solid cyan;
+  /*border: 2px solid cyan;*/
 }
 
 nav ul {
@@ -161,20 +174,20 @@ nav ul {
   font-size: 1em;
   padding: 0;
   /*font-size: 4vw; /*font scaling */
-  border: 2px solid orange;
+  /*border: 2px solid orange;*/
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 nav ul li {
-  border: 2px solid red;
+  /*border: 2px solid red;*/
   width: 33.3%;
   text-align: center;
 }
 
 #hero {
-  border: 5px dashed purple;
+  /*border: 5px dashed purple;*/
   /*background-image: url('../img/hero-fabian-grohs-unsplash.jpg');
   background-size: cover;
   height: 40em;*/
@@ -184,24 +197,30 @@ nav ul li {
   color: #fa0074;
 }
 
-/***** MAIN PORTFOLIO*****/
+
+
+/***** ===== MAIN PORTFOLIO ===== *****/
 #portfolio {
-  border: 2px solid yellow;
+  /*border: 2px solid yellow;*/
 }
 
 .project {
-  border: 5px solid red;
+/*  border: 5px solid red;*/
 }
 
 .portfolio-image {
   margin: 0;
-  border: 2px dashed blue;
+  border: 2px dashed lightblue;
 }
 
-/***** ABOUT SECTION *****/
+
+
+
+
+/***** ===== ABOUT SECTION ===== *****/
 #about {
   /*background-image: url('../img/about-me-vadim-sherbakov-unsplash.jpg');*/
-  border: 2px solid magenta;
+  /*border: 2px solid magenta;*/
 }
 
 #personal-statement {
@@ -212,20 +231,35 @@ nav ul li {
   /*border: 2px solid red;*/
 }
 
-/***** FOOTER CONTACT *****/
+
+
+
+
+
+/***** ===== FOOTER CONTACT ===== *****/
 footer {
   /*border: 2px solid green;*/
   text-align: center;
 }
 
 address {
-  border: 2px solid yellow;
+  /*border: 2px solid yellow;*/
   font-style: normal;
 }
 
 #copyright {
   /*border: 2px solid red;*/
 }
+
+
+
+
+
+
+
+
+
+
 
 /* ==========================================================================
    Helper classes
