@@ -106,7 +106,6 @@ textarea {
 
 
 
-
 /***** ===== BASE STYLES ===== *****/
 body {
   background-color: #1f202b;
@@ -138,23 +137,33 @@ h1, h2, h3, h4, h5, h6 {
 .heading {
   text-align: center;
   color: #fa0074;
+  border: 3px solid yellow;
+  padding: 5%;
+}
+
+.title {
+  text-align: center;
+  /*font-weight: bold;*/
+  font-size: 1.15em;
+}
+
+.type {
+  text-align: center;
+  font-size: 1.10em;
 }
 
 /***** FONTS *****/
-/*font-family: 'Roboto Mono', monospace;*/
-/*font-family: 'Kadwa', serif
-
-
-
-
-
+/*
+font-family: 'Roboto Mono', monospace;
+font-family: 'Kadwa', serif;
+*/
 /***** ===== HEADER ===== *****/
 header {
   /*border: 2px solid red;*/
 }
 
 header #banner-bar {
-/*border: 5px solid green;*/
+  /*border: 5px solid green;*/
 }
 
 #name h1 {
@@ -200,25 +209,20 @@ nav ul li {
   color: #fa0074;
 }
 
-
-
 /***** ===== MAIN PORTFOLIO ===== *****/
 #portfolio {
   /*border: 2px solid yellow;*/
 }
 
 .project {
-/*  border: 5px solid red;*/
+  /*border: 5px solid red;*/
+  padding-bottom: 10%;
 }
 
 .portfolio-image {
   margin: 0;
   border: 2px dashed lightblue;
 }
-
-
-
-
 
 /***** ===== ABOUT SECTION ===== *****/
 #about {
@@ -234,11 +238,6 @@ nav ul li {
   /*border: 2px solid red;*/
 }
 
-
-
-
-
-
 /***** ===== FOOTER CONTACT ===== *****/
 footer {
   /*border: 2px solid green;*/
@@ -253,16 +252,6 @@ address {
 #copyright {
   /*border: 2px solid red;*/
 }
-
-
-
-
-
-
-
-
-
-
 
 /* ==========================================================================
    Helper classes
