@@ -115,7 +115,8 @@ body {
 }
 
 a {
-  color: #64a9df;
+  /*color: #64a9df;*/
+  color: #ffffff;
 }
 
 a:hover {
@@ -129,6 +130,7 @@ a:hover {
   text-align: right;
   color: #9c9c9c;
 }
+
 
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Roboto Mono', monospace;
@@ -154,11 +156,17 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 1.10em;
 }
 
+img {
+  width: 100%;
+}
+
 /***** FONTS *****/
 /*
 font-family: 'Roboto Mono', monospace;
 font-family: 'Kadwa', serif;
 */
+
+
 /***** ===== HEADER ===== *****/
 header {
   /*border: 2px solid red;*/
@@ -172,6 +180,7 @@ header #banner-bar {
   font-size: 1em;
   /*font-size: 4vw; /*font scaling */
   text-align: center;
+  font-weight: normal;
 }
 
 nav {
@@ -187,22 +196,26 @@ nav ul {
   display: flex;
   justify-content: center;
   align-items: center;
+font-family: 'Roboto Mono', monospace;
+font-weight: normal;
 }
 
 nav ul li {
   /*border: 2px solid red;*/
   width: 33.3%;
   text-align: center;
+
 }
 
 #hero {
-  border: 5px dashed purple;
-  /*background-image: url('../img/hero-fabian-grohs-unsplash.jpg');
-  background-size: cover;*/
+  /*border: 5px dashed purple;*/
+  background-image: url('../img/hero-fabian-grohs-unsplash.jpg');
+  background-size: cover;
   height: 25em;
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
+  text-align: right;
 }
 
 #hero span {
