@@ -187,10 +187,13 @@ nav ul li {
 }
 
 #hero {
-  /*border: 5px dashed purple;*/
+  border: 5px dashed purple;
   /*background-image: url('../img/hero-fabian-grohs-unsplash.jpg');
-  background-size: cover;
-  height: 40em;*/
+  background-size: cover;*/
+  height: 25em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #hero span {
