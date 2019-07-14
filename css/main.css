@@ -17,9 +17,11 @@ html {
   width: 100%;
 }
 
-/*box sizing not included in ORIGINAL */
+/* "*" not included in ORIGINAL */
 * {
   box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
 /*body not included in ORIGINAL*/
@@ -122,7 +124,8 @@ a:hover {
 .photo-credit {
   font-size: .5em;
   text-align: right;
-  color: #9c9c9c;
+  /*color: #9c9c9c;*/
+  color: #bfb3d7;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -131,17 +134,19 @@ h1, h2, h3, h4, h5, h6 {
 
 .heading {
   text-align: center;
-  color: #fa0074;
+  color: #f90239  ;
   /*border: 3px solid yellow;*/
   padding: 5%;
+  font-size: 1.25em;
 }
 
 .title {
   text-align: center;
   /*font-weight: bold;*/
   font-size: 1.15em;
-  /*color: #ff3f98;*/
-  color: #D7FCD4;
+  /*color: #fc2601;*/
+  /*color: #D7FCD4;*/
+  color: #bfb3d7;
 }
 
 .type {
@@ -217,7 +222,7 @@ nav ul li {
 }
 
 #hero span {
-  color: #fa0074;
+  color: #f90239;
   /*background-color: #bcacc9;*/
 }
 
@@ -230,7 +235,7 @@ nav ul li {
 .project {
   /*border: 5px solid red;*/
   padding-bottom: 10%;
-  border-bottom: 0.5px solid #fa0074;
+  /*border-bottom: 0.5px solid #f90239;*/
 }
 
 .project .title, .type {
@@ -241,11 +246,25 @@ nav ul li {
 .portfolio-image {
   margin: 5% 0 5% 0;
   border: 2px dashed lightblue;
+  padding: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.portfolio-image img {
+  border: 2px solid red;
+   max-width: 100%;
+   max-height:500px;
+   width: auto;
+   height: auto;
+
 }
 
 /***** ===== ABOUT SECTION ===== *****/
 #about {
-  /*background-image: url('../img/about-me-vadim-sherbakov-unsplash.jpg');*/
+  background-image: url('../img/about-me-vadim-sherbakov-unsplash.jpg');
+  background-size: cover;
   /*border: 2px solid magenta;*/
 }
 
