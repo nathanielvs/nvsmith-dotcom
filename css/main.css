@@ -172,7 +172,6 @@ header #banner-bar {
   /*font-size: 4vw; /*font scaling */
   text-align: center;
   font-weight: normal;
-
 }
 
 nav {
@@ -197,7 +196,6 @@ nav ul li {
   /*border: 2px solid red;*/
   width: 33.3%;
   text-align: center;
-
 }
 
 #hero {
@@ -209,14 +207,22 @@ nav ul li {
   justify-content: flex-end;
   align-items: center;
   text-align: right;
+  text-shadow:
+    -1px -1px 0 #bfb3d7,
+    1px -1px 0 #bfb3d7,
+    -1px 1px 0 #bfb3d7,
+    1px 1px 0 #bfb3d7;
+  font-size: 1.5em;
+  letter-spacing: 5px;
 }
 
 #hero span {
   color: #fa0074;
-  background-color: #D7FCD4;
+  /*background-color: #bcacc9;*/
 }
 
-/***** ===== MAIN PORTFOLIO ===== *****//* TODO: add portfolio images */
+/***** ===== MAIN PORTFOLIO ===== *****/
+/* TODO: add portfolio images */
 #portfolio {
   /*border: 2px solid yellow;*/
 }
