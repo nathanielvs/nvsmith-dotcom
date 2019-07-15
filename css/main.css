@@ -272,9 +272,18 @@ nav ul li {
 
 /***** ===== ABOUT SECTION ===== *****/
 #about {
-  background-image: url('../img/about-me-vadim-sherbakov-unsplash.jpg');
+  background-image: url('../img/monitors-farzad-nazifi-unsplash.jpg');
   background-size: cover;
   /*border: 2px solid magenta;*/
+}
+
+#about .description, #about .title, #about .photo-credit  {
+  color: black;
+}
+
+.transbox {
+ background: rgba(191, 179, 215, 0.9);
+  /*border: 5px solid green;*/
 }
 
 #personal-statement {
