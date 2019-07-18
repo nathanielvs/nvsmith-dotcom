@@ -111,7 +111,8 @@ body {
 }
 
 a {
-  color: inherit;
+  text-decoration: none;
+  color: #388cba;
 }
 
 a:hover {
@@ -137,22 +138,27 @@ h1, h2, h3, h4, h5, h6 {
   color: #f90239;
   font-size: 1.25em;
   text-transform: uppercase;
+  letter-spacing: 2px;
+
 }
 
 .title {
   text-align: center;
-  /*font-size: 1.15em;*/
-  color: #bfb3d7;
+  text-transform: uppercase;
+
 }
 
 .type {
   text-align: center;
-  /*font-size: 1.10em;*/
 }
 
 .wrapper {
-  border: 2px solid green;
   padding: 0 5% 0 5%;
+}
+
+main, footer, .transbox {
+  padding-top: 10%;
+  padding-bottom: 10%;
 }
 
 /***** FONTS *****/
@@ -203,7 +209,7 @@ nav ul li {
   letter-spacing: 5px;
 }
 
-#code {
+#hero #code {
   color: #f90239;
 }
 
@@ -219,6 +225,20 @@ nav ul li {
   height: auto;
 }
 
+main .title {
+  padding-top: 5%;
+}
+
+main img {
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+main p {
+  padding-top: 5%;
+  padding-bottom: 15%;
+}
+
 /***** ===== ABOUT SECTION ===== *****/
 #about {
   background-image: url('../img/monitors-farzad-nazifi-unsplash.jpg');
@@ -231,13 +251,9 @@ nav ul li {
 
 .transbox {
   background: rgba(191, 179, 215, 0.9);
-  width: inherit;
-  height: inherit;
+  height: 100%;
 }
 
-#personal-statement {}
-
-#what-now {}
 
 /***** ===== FOOTER CONTACT ===== *****/
 footer {
