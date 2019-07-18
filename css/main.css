@@ -95,26 +95,26 @@ textarea {
 }
 
 html {
-  font-size: 20px;
   width: 100%;
+  font-size: 20px
 }
-
 
 body {
   width: 100%;
-  background-color: #131313;
-  color: #ffffff;
   font-family: 'Kadwa', serif;
+  color: #ffffff;
+  background-color: #131313;
 }
-
 
 a {
-  /*color: #64a9df;*/
-  color: #ffffff;
+  color: inherit;
+}
+a:hover {
+  color: #388cba;
 }
 
-a:hover {
-  color: #227fab;
+img {
+  width: 100%;
 }
 
 .wrapper {}
@@ -122,7 +122,6 @@ a:hover {
 .photo-credit {
   font-size: .5em;
   text-align: right;
-  /*color: #9c9c9c;*/
   color: #bfb3d7;
 }
 
@@ -132,18 +131,13 @@ h1, h2, h3, h4, h5, h6 {
 
 .heading {
   text-align: center;
-  color: #f90239  ;
-  /*border: 3px solid yellow;*/
-  padding: 2%;
+  color: #f90239;
   font-size: 1.25em;
 }
 
 .title {
   text-align: center;
-  /*font-weight: bold;*/
   font-size: 1.15em;
-  /*color: #fc2601;*/
-  /*color: #D7FCD4;*/
   color: #bfb3d7;
 }
 
@@ -152,75 +146,54 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 1.10em;
 }
 
-img {
-  width: 100%;
-}
 
-p {
-  padding: 5%;
-}
 
 /***** FONTS *****/
 /*
 font-family: 'Roboto Mono', monospace;
 font-family: 'Kadwa', serif;
 */
+
 /***** ===== HEADER ===== *****/
 header {
-  border: 2px solid red;
-  margin-top: 0;
-  padding-top: 0;
+
 }
 
 header #banner-bar {
-  /*border: 5px solid green;*/
+
 }
 
 #name h1 {
-  border: 2px solid green;
   font-size: 1em;
   /*font-size: 4vw; /*font scaling */
   text-align: center;
   font-weight: normal;
-  padding: 0;
 }
 
 nav {
-  border: 2px solid cyan;
-  padding: 0;
 
 }
 
 nav ul {
   list-style: none;
   font-size: 1em;
-  padding: 0;
   /*font-size: 4vw; /*font scaling */
-  border: 2px solid orange;
   display: flex;
   justify-content: center;
   align-items: center;
   font-family: 'Roboto Mono', monospace;
   font-weight: normal;
-  margin-bottom: 0;
-  margin-top: 0;
+
+
 }
 
 nav ul li {
-  /*border: 2px solid red;*/
   width: 33.3%;
   text-align: center;
-  padding: 0;
-
 }
 
-nav a {
-  margin: 0;
-  padding: 0;
-}
 
 #hero {
-  /*border: 5px dashed purple;*/
   background-image: url('../img/hero-fabian-grohs-unsplash.jpg');
   background-size: cover;
   height: 15em;
@@ -235,107 +208,75 @@ nav a {
     1px 1px 0 #bfb3d7;
   font-size: 1.5em;
   letter-spacing: 5px;
-
 }
 
-#tagline {
-  /*padding: 5%;*/
-}
 
 #code {
   color: #f90239;
-  /*background-color: #bcacc9;*/
 }
 
 /***** ===== MAIN PORTFOLIO ===== *****/
 #portfolio {
-  /*border-top: 1px solid #f90239;*/
-
 }
 
 .project {
-  /*border: 5px solid red;*/
-  padding-bottom: 10%;
-  /*border-bottom: 0.5px solid #f90239;*/
 }
 
 .project .title, .type {
-  padding: 0;
-  margin: 1%;
 }
 
 .portfolio-image {
-  margin: 0 0 5% 0;
-  /*border: 2px dashed lightblue;*/
-  padding: 0 5% 0 5%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .portfolio-image img {
-  /*border: 2px solid red;*/
-   max-width: 100%;
-   width: auto;
-   height: auto;
-
+  max-width: 100%;
+  height: auto;
 }
 
 /***** ===== ABOUT SECTION ===== *****/
 #about {
   background-image: url('../img/monitors-farzad-nazifi-unsplash.jpg');
   background-size: cover;
-border: 2px solid magenta;
-margin: 0;
-padding: 0;
 }
 
-#about .description, #about .title, #about .photo-credit  {
+#about .description, #about .title, #about .photo-credit {
   color: #131313;
 }
 
 .transbox {
- background: rgba(191, 179, 215, 0.9);
-/*border: 5px solid blue;*/
-padding-bottom: 0;
-margin: 0;
-height: 100%;
+  background: rgba(191, 179, 215, 0.9);
+  width: inherit;
+  height: inherit;
 }
 
 #personal-statement {
-  /*border: 2px solid green;*/
 }
 
 #what-now {
-  /*border: 2px solid red;*/
 }
 
 /***** ===== FOOTER CONTACT ===== *****/
 footer {
-  border: 5px solid green;
   text-align: center;
-  margin: 0;
 }
 
 address {
-  /*border: 2px solid yellow;*/
   font-style: normal;
 }
 
 .social-icons a:hover {
-  color: #227fab;
+  color: #388cba;
 }
 
 i {
   color: #f90239;
   font-size: 3em;
-  /*border: 2px solid pink;*/
-  width: 30%;
-  padding: 5%;
 }
 
 #copyright {
-  /*border: 2px solid red;*/
 }
 
 /* ==========================================================================
