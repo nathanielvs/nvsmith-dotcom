@@ -116,7 +116,7 @@ a {
 }
 
 a:hover {
-  color: #388cba;
+  color: #79a3ba;
 }
 
 img {
@@ -126,10 +126,9 @@ img {
 .photo-credit {
   font-size: .5em;
   text-align: right;
-  color: #bfb3d7;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6, nav {
   font-family: 'Roboto Mono', monospace;
 }
 
@@ -145,7 +144,6 @@ h1, h2, h3, h4, h5, h6 {
 .title {
   text-align: center;
   text-transform: uppercase;
-
 }
 
 .type {
@@ -156,9 +154,8 @@ h1, h2, h3, h4, h5, h6 {
   padding: 0 5% 0 5%;
 }
 
-main, footer, .transbox {
-  padding-top: 10%;
-  padding-bottom: 10%;
+main, footer, .transbox, .heading {
+  padding: 5% 0 5% 0;
 }
 
 /***** FONTS *****/
@@ -201,11 +198,11 @@ nav ul li {
   align-items: center;
   text-align: right;
   text-shadow:
-    -1px -1px 0 #bfb3d7,
-    1px -1px 0 #bfb3d7,
-    -1px 1px 0 #bfb3d7,
-    1px 1px 0 #bfb3d7;
-  font-size: 1.5em;
+    -1px -1px 0 #000000,
+    1px -1px 0 #000000,
+    -1px 1px 0 #000000,
+    1px 1px 0 #000000;
+  font-size: 1.75em;
   letter-spacing: 5px;
 }
 
@@ -225,18 +222,15 @@ nav ul li {
   height: auto;
 }
 
-main .title {
-  padding-top: 5%;
+.project {
+  padding-bottom: 15%;
 }
 
 main img {
-  padding-top: 5%;
-  padding-bottom: 5%;
+  padding: 5% 0 5% 0;
 }
 
 main p {
-  padding-top: 5%;
-  padding-bottom: 15%;
 }
 
 /***** ===== ABOUT SECTION ===== *****/
@@ -246,11 +240,11 @@ main p {
 }
 
 #about .description, #about .title, #about .photo-credit {
-  color: #131313;
+  color: #000000;
 }
 
 .transbox {
-  background: rgba(191, 179, 215, 0.9);
+  background: rgba(181, 178, 175, .9);
   height: 100%;
 }
 
