@@ -250,8 +250,12 @@ main img {
   color: #000000;
 }
 
+#about p {
+  margin: 5%;
+}
+
 #personal-statement, #what-now {
-  padding-bottom: 10%;
+  padding-bottom: 5%;
 }
 
 .transbox {
