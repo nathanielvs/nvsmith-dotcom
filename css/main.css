@@ -10,23 +10,7 @@
    ========================================================================== */
 html {
   color: #222;
-  /* font-size: 1em; ORIGINAL */
-  font-size: 16px;
   line-height: 1.4;
-  /* width not included in ORIGINAL*/
-  width: 100%;
-}
-
-/* "*" not included in ORIGINAL */
-* {
-  box-sizing: border-box;
-  /*padding: 0;
-  margin: 0;*/
-}
-
-/*body not included in ORIGINAL*/
-body {
-  width: 100%;
 }
 
 /*
@@ -104,11 +88,25 @@ textarea {
    Author's custom styles
    ========================================================================== */
 /***** ===== BASE STYLES ===== *****/
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 20px;
+  width: 100%;
+}
+
+
 body {
+  width: 100%;
   background-color: #131313;
   color: #ffffff;
   font-family: 'Kadwa', serif;
 }
+
 
 a {
   /*color: #64a9df;*/
@@ -136,7 +134,7 @@ h1, h2, h3, h4, h5, h6 {
   text-align: center;
   color: #f90239  ;
   /*border: 3px solid yellow;*/
-  padding: 5%;
+  padding: 2%;
   font-size: 1.25em;
 }
 
@@ -169,7 +167,9 @@ font-family: 'Kadwa', serif;
 */
 /***** ===== HEADER ===== *****/
 header {
-  /*border: 2px solid red;*/
+  border: 2px solid red;
+  margin-top: 0;
+  padding-top: 0;
 }
 
 header #banner-bar {
@@ -177,15 +177,18 @@ header #banner-bar {
 }
 
 #name h1 {
+  border: 2px solid green;
   font-size: 1em;
   /*font-size: 4vw; /*font scaling */
   text-align: center;
   font-weight: normal;
-  padding-top: 5%;
+  padding: 0;
 }
 
 nav {
-  /*border: 2px solid cyan;*/
+  border: 2px solid cyan;
+  padding: 0;
+
 }
 
 nav ul {
@@ -193,26 +196,34 @@ nav ul {
   font-size: 1em;
   padding: 0;
   /*font-size: 4vw; /*font scaling */
-  /*border: 2px solid orange;*/
+  border: 2px solid orange;
   display: flex;
   justify-content: center;
   align-items: center;
   font-family: 'Roboto Mono', monospace;
   font-weight: normal;
   margin-bottom: 0;
+  margin-top: 0;
 }
 
 nav ul li {
   /*border: 2px solid red;*/
   width: 33.3%;
   text-align: center;
+  padding: 0;
+
+}
+
+nav a {
+  margin: 0;
+  padding: 0;
 }
 
 #hero {
   /*border: 5px dashed purple;*/
   background-image: url('../img/hero-fabian-grohs-unsplash.jpg');
   background-size: cover;
-  height: 20em;
+  height: 15em;
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -238,7 +249,8 @@ nav ul li {
 
 /***** ===== MAIN PORTFOLIO ===== *****/
 #portfolio {
-  /*border: 2px solid yellow;*/
+  /*border-top: 1px solid #f90239;*/
+
 }
 
 .project {
@@ -253,9 +265,9 @@ nav ul li {
 }
 
 .portfolio-image {
-  margin: 5% 0 5% 0;
+  margin: 0 0 5% 0;
   /*border: 2px dashed lightblue;*/
-  padding: 5%;
+  padding: 0 5% 0 5%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -264,7 +276,6 @@ nav ul li {
 .portfolio-image img {
   /*border: 2px solid red;*/
    max-width: 100%;
-   max-height:300px;
    width: auto;
    height: auto;
 
@@ -274,16 +285,21 @@ nav ul li {
 #about {
   background-image: url('../img/monitors-farzad-nazifi-unsplash.jpg');
   background-size: cover;
-  /*border: 2px solid magenta;*/
+border: 2px solid magenta;
+margin: 0;
+padding: 0;
 }
 
 #about .description, #about .title, #about .photo-credit  {
-  color: black;
+  color: #131313;
 }
 
 .transbox {
  background: rgba(191, 179, 215, 0.9);
-  /*border: 5px solid green;*/
+/*border: 5px solid blue;*/
+padding-bottom: 0;
+margin: 0;
+height: 100%;
 }
 
 #personal-statement {
@@ -296,8 +312,9 @@ nav ul li {
 
 /***** ===== FOOTER CONTACT ===== *****/
 footer {
-  /*border: 2px solid green;*/
+  border: 5px solid green;
   text-align: center;
+  margin: 0;
 }
 
 address {
