@@ -146,16 +146,16 @@ h1, h2, h3, h4, h5, h6, nav {
   text-transform: uppercase;
 }
 
-.type {
-  text-align: center;
-}
-
 .wrapper {
   padding: 0 5% 0 5%;
 }
 
 main, footer, .transbox, .heading {
   padding: 5% 0 5% 0;
+}
+
+#about .title, footer .title {
+  padding: 5%;
 }
 
 /***** FONTS *****/
@@ -185,7 +185,6 @@ nav ul {
 nav ul li {
   width: 33.3%;
   text-align: center;
-  text-transform: uppercase;
   text-align: center;
 }
 
@@ -203,11 +202,17 @@ nav ul li {
     -1px 1px 0 #000000,
     1px 1px 0 #000000;
   font-size: 1.75em;
-  letter-spacing: 5px;
+  letter-spacing: 2px;
 }
 
 #hero #code {
   color: #f90239;
+  text-shadow:
+    -1px -1px 0 #ffffff,
+    1px -1px 0 #ffffff,
+    -1px 1px 0 #ffffff,
+    1px 1px 0 #ffffff;
+
 }
 
 /***** ===== MAIN PORTFOLIO ===== *****/
@@ -230,7 +235,9 @@ main img {
   padding: 5% 0 5% 0;
 }
 
-main p {
+
+.type {
+  text-align: center;
 }
 
 /***** ===== ABOUT SECTION ===== *****/
@@ -241,6 +248,10 @@ main p {
 
 #about .description, #about .title, #about .photo-credit {
   color: #000000;
+}
+
+#personal-statement, #what-now {
+  padding-bottom: 10%;
 }
 
 .transbox {
@@ -258,16 +269,25 @@ address {
   font-style: normal;
 }
 
+.social {
+  padding: 5% 0 5% 0;
+}
+
+
 .social-icons a:hover {
   color: #388cba;
+
 }
 
 i {
   color: #f90239;
   font-size: 3em;
+  width: 20%;
 }
 
-#copyright {}
+#copyright {
+  padding: 5%;
+}
 
 /* ==========================================================================
    Helper classes
