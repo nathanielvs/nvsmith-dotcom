@@ -1,10 +1,6 @@
 /*! HTML5 Boilerplate v7.2.0 | MIT License | https://html5boilerplate.com/ */
 /* main.css 2.0.0 | MIT License | https://github.com/h5bp/main.css#readme */
-/*
- * What follows is the result of much research on cross-browser styling.
- * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
- * Kroc Camen, and the H5BP dev community and team.
- */
+
 /* ==========================================================================
    Base styles: opinionated defaults
    ========================================================================== */
@@ -14,15 +10,7 @@ html {
   font-size: 1em;
 }
 
-/*
- * Remove text-shadow in selection highlight:
- * https://twitter.com/miketaylr/status/12228805301
- *
- * Vendor-prefixed and regular ::selection selectors cannot be combined:
- * https://stackoverflow.com/a/16982510/7133471
- *
- * Customize the background color to match your design.
- */
+
 ::-moz-selection {
   background: #b3d4fc;
   text-shadow: none;
@@ -34,7 +22,7 @@ html {
 }
 
 /*
- * A better looking default horizontal rule
+ * Better looking default rules
  */
 hr {
   display: block;
@@ -45,11 +33,7 @@ hr {
   padding: 0;
 }
 
-/*
- * Remove the gap between audio, canvas, iframes,
- * images, videos and the bottom of their containers:
- * https://github.com/h5bp/html5-boilerplate/issues/440
- */
+
 audio,
 canvas,
 iframe,
@@ -59,25 +43,19 @@ video {
   vertical-align: middle;
 }
 
-/*
- * Remove default fieldset styles.
- */
+
 fieldset {
   border: 0;
   margin: 0;
   padding: 0;
 }
 
-/*
- * Allow only vertical resizing of textareas.
- */
+
 textarea {
   resize: vertical;
 }
 
-/* ==========================================================================
-   Browser Upgrade Prompt
-   ========================================================================== */
+
 .browserupgrade {
   margin: 0.2em 0;
   background: #ccc;
@@ -88,7 +66,7 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-/***** ===== BASE STYLES ===== *****/
+/********** ===== BASE STYLES ===== **********/
 * {
   box-sizing: border-box;
   padding: 0;
@@ -146,13 +124,12 @@ h1, h2, h3, h4, h5, h6, nav {
 
 .title {
   text-align: center;
-  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
 header, main, .heading, .transbox, .social, footer {
   padding: 5% 0 5% 0;
 }
-
 
 #about .title, footer .title {
   padding: 5%;
@@ -162,7 +139,24 @@ header, main, .heading, .transbox, .social, footer {
 font-family: 'Roboto Mono', monospace;
 font-family: 'Kadwa', serif;
 */
-/***** ===== HEADER ===== *****/
+
+
+/*  Alt TABLET BASE STYLES  */
+@media only screen and (min-width: 768px) {
+
+  html {
+    font-size: 1.5em;
+  }
+
+
+  .title {
+    border: 2px solid red;
+    font-size: 1.2em;
+  }
+
+
+}
+/********** ===== HEADER ===== **********/
 #name h1 {
   font-size: 1em;
   font-weight: normal;
@@ -214,7 +208,16 @@ nav ul li {
     1px 1px 0 #ffffff;
 }
 
-/***** ===== MAIN PORTFOLIO ===== *****/
+@media only screen and (min-width: 768px) {
+  /* Alt TABLET HEADER STYLES */
+
+  #hero {
+    height: 25em;
+    }
+
+}
+
+/********** ===== MAIN PORTFOLIO ===== **********/
 .project {
   padding-bottom: 20%;
 }
@@ -223,7 +226,12 @@ nav ul li {
   text-align: center;
 }
 
-/***** ===== ABOUT SECTION ===== *****/
+@media only screen and (min-width: 768px) {
+  /* Alt TABLET MAIN PORTFOLIO STYLES */
+
+}
+
+/********** ===== ABOUT SECTION ===== **********/
 #about {
   background-image: url('../img/monitors-farzad-nazifi-unsplash.jpg');
   background-size: cover;
@@ -239,9 +247,12 @@ nav ul li {
   padding-bottom: 5%;
 }
 
+@media only screen and (min-width: 768px) {
+  /* Alt TABLET ABOUT SECTION STYLES */
 
+}
 
-/***** ===== FOOTER CONTACT ===== *****/
+/********** ===== FOOTER CONTACT ===== **********/
 footer {
   text-align: center;
 }
@@ -249,8 +260,6 @@ footer {
 address {
   font-style: normal;
 }
-
-
 
 .social-icons a:hover {
   color: #388cba;
@@ -264,6 +273,18 @@ i {
 
 #copyright {
   padding: 5%;
+}
+
+/* Alt TABLET FOOTER STYLES */
+@media only screen and (min-width: 768px) {
+
+  i {
+    color: #f90239;
+    font-size: 3.5em;
+    width: 25%;
+  }
+
+
 }
 
 /* ==========================================================================
@@ -344,13 +365,9 @@ i {
 }
 
 /* ==========================================================================
-   EXAMPLE Media Queries for Responsive Design.
-   These examples override the primary ('mobile first') styles.
-   Modify as content requires.
+   Other example Media Queries for Responsive Design.
    ========================================================================== */
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
-}
+
 
 @media print,
 (-webkit-min-device-pixel-ratio: 1.25),
