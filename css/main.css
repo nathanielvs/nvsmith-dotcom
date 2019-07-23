@@ -142,7 +142,11 @@ font-family: 'Kadwa', serif;
 }
 
 /*  ***** Alt DESKTOP BASE STYLES ***** */
-@media only screen and (min-width: 1200px) {}
+@media only screen and (min-width: 1200px) {
+  header, main, .heading, .transbox, .social, footer {
+    padding: 5% 0 5% 0;
+  }
+}
 
 /********** ========== HEADER ========== **********/
 #name h1 {
@@ -220,16 +224,19 @@ nav ul li {
   }
 
   nav {
-    border: 2px solid green;
+    width: 40%;
   }
 
+  nav ul {
+    flex-wrap: wrap;
+  }
 
   #name .separator {
     display: inline;
   }
 
-  #name {
-    border: 2px solid green;
+  #hero {
+    height: 30em;
   }
 }
 
