@@ -220,15 +220,16 @@ nav ul li {
   }
 
   nav {
-    width: 50%;
+    border: 2px solid green;
   }
 
-  nav a {
-    float: right;
-  }
 
   #name .separator {
     display: inline;
+  }
+
+  #name {
+    border: 2px solid green;
   }
 }
 
