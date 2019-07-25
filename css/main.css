@@ -73,6 +73,8 @@ html {
 
 body {
   width: 100%;
+  max-width: 1800px;
+  margin: auto;
   font-family: 'Kadwa', serif;
   color: #ffffff;
   background-color: #131313;
@@ -253,7 +255,48 @@ nav ul li {
 @media only screen and (min-width: 768px) {}
 
 /*  ***** Alt DESKTOP MAIN PORTFOLIO STYLES *****  */
-@media only screen and (min-width: 1200px) {}
+@media only screen and (min-width: 1200px) {
+
+  .wrapper {
+    border: 2px solid pink;
+  }
+
+  .project {
+    border: 2px solid red;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: space-between;
+    height: 800px;
+  }
+
+  .project .title, .project .type, .project .description {
+    width: 50%;
+    order: 2;
+    text-align: left;
+    padding: 0 0 5% 5%;
+  }
+
+  .project figure {
+    order: 1;
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .project img {
+    border: 2px solid green; /* TODO: convert images to same aspect ratios */
+    width: 100%;
+    max-height: 740px;
+    /*max-width: 500px;*/
+    padding: 0;
+    margin: 0;
+  }
+
+} /*End DESKTOP MAIN PORTFOLIO STYLES */
 
 /********** ========== ABOUT SECTION ========== **********/
 #about {
