@@ -173,7 +173,6 @@ nav ul {
 nav ul li {
   width: 33.3%;
   text-align: center;
-  text-align: center;
 }
 
 #hero {
@@ -233,6 +232,11 @@ nav ul li {
     flex-wrap: wrap;
   }
 
+  nav ul li {
+    width: 33.3%;
+    text-align: right;
+  }
+
   #name .separator {
     display: inline;
   }
@@ -256,10 +260,6 @@ nav ul li {
 
 /*  ***** Alt DESKTOP MAIN PORTFOLIO STYLES *****  */
 @media only screen and (min-width: 1200px) {
-
-  .wrapper {
-    border: 2px solid pink;
-  }
 
   .project {
     border: 2px solid red;
@@ -318,7 +318,36 @@ nav ul li {
 @media only screen and (min-width: 768px) {}
 
 /*  ***** Alt DESKTOP ABOUT SECTION STYLES *****  */
-@media only screen and (min-width: 1200px) {}
+@media only screen and (min-width: 1200px) {
+
+  .about-content {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: space-between;
+    height: 500px;
+}
+
+.about-content #column1, .about-content #column2 {
+  width: 50%;
+  height: 100%;
+  align-items: flex-start;
+}
+
+#column1 {
+  border-right: 3px solid black;
+}
+
+#column1 .description {
+  padding-right: 5%;
+}
+
+#column2 .description {
+  padding-left: 5%;
+}
+
+
+}/* end Alt DESKTOP ABOUT SECTION STYLES */
 
 /********** ========== FOOTER CONTACT ========== **********/
 footer {
