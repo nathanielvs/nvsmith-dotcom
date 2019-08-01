@@ -70,7 +70,7 @@ html {
 
 body {
   width: 100%;
-  max-width: 2400px;
+  max-width: 1800px;
   margin: auto;
   font-family: 'Kadwa', serif;
   font-size: 1em;
@@ -80,7 +80,6 @@ body {
 
 .wrapper {
   margin: 0 5% 0 5%;
-  /*border: 2px solid pink;*/
 }
 
 /* Central Alignments */
@@ -133,8 +132,7 @@ h1, h2, h3, h4, h5, h6, nav {
 }
 
 img {
-  margin-left: auto;
-  margin-right: auto;
+  margin: auto;
   display: block;
 }
 
@@ -162,7 +160,7 @@ nav ul li {
 #hero {
   background-image: url('../img/hero-fabian-grohs-unsplash2.jpg');
   background-size: cover;
-  height: 15em;
+  height: 10em;
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -211,15 +209,18 @@ address {
   font-style: normal;
 }
 
+footer #profile-pic img, #social-icons {
+  width: 70%;
+  max-width: 300px;
+  margin: auto;
+}
+
 i {
   font-size: 2.5em;
   width: 30%;
 }
 
-footer #profile-pic img {
-  width: 50%;
-  max-width: 200px;
-}
+
 
 /**/
 @media only screen and (min-width: 768px) {
@@ -228,11 +229,7 @@ footer #profile-pic img {
   /* +++++++++++++++++++++ Portrait Tablet Styles  ++++++++++++++++++++ */
   /** ----- Base Portrait Tablet ----- **/
   body {
-    font-size: 1.6em;
-  }
-
-  main, .transbox, footer {
-    padding: 5% 0 5% 0;
+    font-size: 1.2em;
   }
 
   .section-title, .title, p, i, img {
@@ -241,7 +238,7 @@ footer #profile-pic img {
 
   /** ----- Header Portrait Tablet ----- **/
   #hero {
-    height: 18em;
+    height: 15em;
   }
 
   /** ----- Main Portfolio Portrait Tablet ----- **/
@@ -266,9 +263,6 @@ footer #profile-pic img {
     padding-bottom: 5%;
   }
 
-  i {
-    width: 20%;
-  }
 }
 
 /**/
@@ -277,9 +271,13 @@ footer #profile-pic img {
   /**/
   /* +++++++++++++++++++++ Landscape Tablet Styles  ++++++++++++++++++++ */
   /** ----- Base Landscape Tablet ----- **/
-  .section-title, .title {
-    padding: 15px 0 15px 0;
-  }
+main, .transbox, footer {
+  padding-bottom: 50px;
+}
+
+.section-title {
+  padding: 25px 0 25px 0;
+}
 
   /** ----- Header Landscape Tablet ----- **/
   /** ----- Main Portfolio Landscape Tablet ----- **/
@@ -302,11 +300,11 @@ footer #profile-pic img {
   }
 
   #about .details {
-    /*border: 2px solid red;*/
     text-align: justify;
   }
 
   /** ----- Footer Contact Landscape Tablet ----- **/
+
 }
 
 /**/
