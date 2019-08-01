@@ -225,28 +225,26 @@ footer #profile-pic img {
 @media only screen and (min-width: 768px) {
 
   /**/
-  /* ++++++++++++++++++++++++++ Tablet Styles +++++++++++++++++++++++++ */
-  /** ----- Base Tablet ----- **/
+  /* +++++++++++++++++++++ Portrait Tablet Styles  ++++++++++++++++++++ */
+  /** ----- Base Portrait Tablet ----- **/
   body {
     font-size: 1.6em;
   }
 
-  /* Section Margins and Padding*/
   main, .transbox, footer {
     padding: 5% 0 5% 0;
   }
 
   .section-title, .title, p, i, img {
     padding: 10px 0 10px 0;
-    /*  border: 2px solid red;*/
   }
 
-  /** ----- Header Tablet ----- **/
+  /** ----- Header Portrait Tablet ----- **/
   #hero {
     height: 18em;
   }
 
-  /** ----- Main Portfolio Tablet ----- **/
+  /** ----- Main Portfolio Portrait Tablet ----- **/
   /** ----- About Tablet ----- **/
   #about {
     background-image: url('../img/monitors-farzad-nazifi-unsplash.jpg');
@@ -263,7 +261,7 @@ footer #profile-pic img {
     display: block;
   }
 
-  /** ----- Footer Contact Tablet ----- **/
+  /** ----- Footer Contact Portrait Tablet ----- **/
   .social {
     padding-bottom: 5%;
   }
@@ -274,9 +272,46 @@ footer #profile-pic img {
 }
 
 /**/
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1024px) {
 
   /**/
+  /* +++++++++++++++++++++ Landscape Tablet Styles  ++++++++++++++++++++ */
+  /** ----- Base Landscape Tablet ----- **/
+  .section-title, .title {
+    padding: 15px 0 15px 0;
+  }
+
+  /** ----- Header Landscape Tablet ----- **/
+  /** ----- Main Portfolio Landscape Tablet ----- **/
+  /** ----- About Landscape Tablet ----- **/
+  #about .half-width {
+    display: flex;
+  }
+
+  #about .description {
+    width: 50%;
+  }
+
+  #column1 {
+    border-right: 3px solid black;
+    padding-right: 5%;
+  }
+
+  #column2 {
+    padding-left: 5%;
+  }
+
+  #about .details {
+    /*border: 2px solid red;*/
+    text-align: justify;
+  }
+
+  /** ----- Footer Contact Landscape Tablet ----- **/
+}
+
+/**/
+@media only screen and (min-width: 1200px) {
+
   /**/
   /* +++++++++++++++++++++++ Desktop Styles ++++++++++++++++++++++++++ */
   /** ----- Base Desktop ----- **/
