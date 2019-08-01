@@ -16,9 +16,7 @@ html {
   text-shadow: none;
 }
 
-/*
- * Better looking default rules
- */
+/*Better looking default rules*/
 hr {
   display: block;
   height: 1px;
@@ -57,7 +55,9 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-/********** ========== BASE STYLES ========== **********/
+/**/
+/* ============================== BASE STYLES ======================== */
+/**/
 * {
   box-sizing: border-box;
   padding: 0;
@@ -65,25 +65,38 @@ textarea {
 }
 
 html {
-  width: 100%;
-  font-size: 20px;
-  font-weight: normal;
-  font-style: normal;
+  font-size: 16px;
 }
 
 body {
   width: 100%;
-  max-width: 1800px;
+  max-width: 2400px;
   margin: auto;
   font-family: 'Kadwa', serif;
+  font-size: 1em;
   color: #ffffff;
   background-color: #131313;
 }
 
 .wrapper {
-  padding: 0 5% 0 5%;
+  margin: 0 5% 0 5%;
+  /*border: 2px solid pink;*/
 }
 
+/* Central Alignments */
+.section-title, .title, footer {
+  text-align: center;
+}
+
+
+/* Section Margins and Padding*/
+.section-title, .title, p, i {
+  padding: 10px 0 10px;
+/*  border: 2px solid red;*/
+}
+
+
+/* Global Font Styles */
 a {
   text-decoration: none;
   color: #388cba;
@@ -93,68 +106,62 @@ a:hover {
   color: #79a3ba;
 }
 
-img {
-  width: 100%;
-  padding: 5% 0 5% 0;
-}
-
 h1, h2, h3, h4, h5, h6, nav {
   font-family: 'Roboto Mono', monospace;
+  font-size: 1em;
+  font-weight: normal;
 }
 
-.heading {
-  text-align: center;
-  color: #f90239;
-  font-size: 1.25em;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-}
-
-.photo-credit {
+.credit {
   font-size: .5em;
   text-align: right;
+  padding-top: 5px;
+  display: none;
+}
+
+#code, .section-title, i {
+  color: #f90239;
+}
+
+.section-title {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 1.67em;
 }
 
 .title {
-  text-align: center;
-  letter-spacing: 1px;
+  font-size: 1.2em;
+  font-weight: bold;
 }
 
-header, main, .heading, .transbox, .social, footer {
-  padding: 5% 0 5% 0;
+img {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
 }
 
-#about .title, footer .title {
-  padding: 5%;
-}
-
-/*
-font-family: 'Roboto Mono', monospace;
-font-family: 'Kadwa', serif;
-*/
-/* ----- Alt TABLET BASE STYLES ----- */
+/* +++++ Tablet: Base Styles +++++ */
 @media only screen and (min-width: 768px) {
-  html {
-    font-size: 1.5em;
-  }
 
-  .title {
-    font-size: 1.2em;
-  }
 }
 
-/*  ***** Alt DESKTOP BASE STYLES ***** */
+/* ----- End Tablet: Base Styles ----- */
+/**/
+/* +++++ Desktop: Base Styles +++++ */
 @media only screen and (min-width: 1200px) {
-  header, main, .heading, .transbox, .social, footer {
-    padding: 5% 0 5% 0;
+  .wrapper {
+    padding: 2% 100px 2% 100px;
   }
+
 }
 
-/********** ========== HEADER ========== **********/
-#name h1 {
-  font-size: 1em;
-  font-weight: normal;
+/* ----- End Desktop: Base Styles ----- */
+/**/
+/* =============================== HEADER ============================ */
+/**/
+#banner #name, nav {
   text-align: center;
+  font-size: 1.15em;
 }
 
 #name .separator {
@@ -164,40 +171,32 @@ font-family: 'Kadwa', serif;
 nav ul {
   list-style: none;
   display: flex;
-  font-family: 'Roboto Mono', monospace;
-  font-weight: normal;
-  margin: 0;
-  padding: 0;
 }
 
 nav ul li {
   width: 33.3%;
-  text-align: center;
 }
 
 #hero {
   background-image: url('../img/hero-fabian-grohs-unsplash2.jpg');
   background-size: cover;
-  height: 20em;
+  height: 15em;
   display: flex;
   justify-content: flex-end;
   align-items: center;
 }
 
-#tagline {
-  padding-right: 5%;
+#hero #tagline {
   text-align: right;
+  font-size: 2.2em;
   text-shadow:
     -1px -1px 0 #000000,
     1px -1px 0 #000000,
     -1px 1px 0 #000000,
     1px 1px 0 #000000;
-  font-size: 1.75em;
-  letter-spacing: 2px;
 }
 
 #tagline #code {
-  color: #f90239;
   text-shadow:
     -1px -1px 0 #ffffff,
     1px -1px 0 #ffffff,
@@ -205,185 +204,90 @@ nav ul li {
     1px 1px 0 #ffffff;
 }
 
-/* ----- Alt TABLET HEADER STYLES ----- */
-@media only screen and (min-width: 768px) {
-  #hero {
-    height: 25em;
-  }
+#credit1 {
+  display: block;
 }
 
-/*  ***** Alt DESKTOP HEADER STYLES *****  */
-@media only screen and (min-width: 1200px) {
-  #banner-bar br {
-    display: none;
-  }
-
-  #banner-bar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  nav {
-    width: 40%;
-  }
-
-  nav ul {
-    flex-wrap: wrap;
-  }
-
-  nav ul li {
-    width: 33.3%;
-    text-align: right;
-  }
-
-  #name .separator {
-    display: inline;
-  }
-
-  #hero {
-    height: 30em;
-  }
-}
-
-/********** ========== MAIN PORTFOLIO ========== **********/
-.project {
-  padding-bottom: 20%;
-}
-
-.type {
-  text-align: center;
-}
-
-/* ----- Alt TABLET MAIN PORTFOLIO STYLES ----- */
+/* +++++ Tablet: Header +++++ */
 @media only screen and (min-width: 768px) {}
 
-/*  ***** Alt DESKTOP MAIN PORTFOLIO STYLES *****  */
-@media only screen and (min-width: 1200px) {
+/* ----- End Tablet: Header ----- */
+/**/
+/* +++++ Desktop: Header +++++ */
+@media only screen and (min-width: 1200px) {}
 
-  .project {
-    border: 2px solid red;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    align-content: space-between;
-    height: 800px;
-  }
+/* ----- End Desktop: Header ----- */
+/**/
+/* ========== MAIN PORTFOLIO ========== */
+/**/
 
-  .project .title, .project .type, .project .description {
-    width: 50%;
-    order: 2;
-    text-align: left;
-    padding: 0 0 5% 5%;
-  }
+/* +++++ Tablet: Main Portfolio +++++ */
+@media only screen and (min-width: 768px) {}
 
-  .project figure {
-    order: 1;
-    height: 100%;
-    width: 50%;
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-  }
+/* ----- End Tablet: Main Portfolio ----- */
+/**/
+/* +++++ Desktop: Main Portfolio +++++ */
+@media only screen and (min-width: 1200px) {}
 
-  .project img {
-    border: 2px solid green; /* TODO: convert images to same aspect ratios */
-    width: 100%;
-    max-height: 740px;
-    /*max-width: 500px;*/
-    padding: 0;
-    margin: 0;
-  }
+/* ----- End Desktop: Main Portfolio ----- */
+/**/
+/* ============================= ABOUT ME ======================== */
+/**/
 
-} /*End DESKTOP MAIN PORTFOLIO STYLES */
-
-/********** ========== ABOUT SECTION ========== **********/
 #about {
-  background-image: url('../img/monitors-farzad-nazifi-unsplash.jpg');
-  background-size: cover;
   color: #000000;
 }
 
+
 .transbox {
-  background: rgba(181, 178, 175, .9);
+  background: rgba(223, 206, 177, 1.0);
   height: 100%;
 }
 
-#about p, #personal-statement, #what-now {
-  padding-bottom: 5%;
+/* +++++ Tablet: About Me +++++ */
+@media only screen and (min-width: 768px) {
+  #about {
+    background-image: url('../img/monitors-farzad-nazifi-unsplash.jpg');
+    background-size: cover;
+    color: #000000;
+  }
 }
 
-/* ----- Alt TABLET ABOUT SECTION STYLES ----- */
-@media only screen and (min-width: 768px) {}
-
-/*  ***** Alt DESKTOP ABOUT SECTION STYLES *****  */
+/* ----- End Tablet: About Me ----- */
+/**/
+/* +++++ Desktop: About Me +++++ */
 @media only screen and (min-width: 1200px) {
 
-  .about-content {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-content: space-between;
-    height: 500px;
 }
 
-.about-content #column1, .about-content #column2 {
-  width: 50%;
-  height: 100%;
-  align-items: flex-start;
-}
-
-#column1 {
-  border-right: 3px solid black;
-}
-
-#column1 .description {
-  padding-right: 5%;
-}
-
-#column2 .description {
-  padding-left: 5%;
-}
-
-
-}/* end Alt DESKTOP ABOUT SECTION STYLES */
-
-/********** ========== FOOTER CONTACT ========== **********/
-footer {
-  text-align: center;
-}
-
+/* ----- End Desktop: About Me ----- */
+/**/
+/* ========================== FOOTER CONTACT ========================= */
+/**/
 address {
   font-style: normal;
 }
 
-.social-icons a:hover {
-  color: #388cba;
-}
 
 i {
-  color: #f90239;
-  font-size: 3em;
-  width: 25%;
+  font-size: 2.5em;
+  width: 30%;
 }
 
-#copyright {
-  padding: 5%;
+footer #profile-pic img{
+width: 50%;
 }
 
-/* ----- Alt TABLET FOOTER STYLES ----- */
-@media only screen and (min-width: 768px) {
-  i {
-    color: #f90239;
-    font-size: 3.5em;
-    width: 25%;
-  }
-}
+/* +++++ Tablet: Footer Contact +++++ */
+@media only screen and (min-width: 768px) {}
 
-/* *****  Alt DESKTOP FOOTER STYLES ***** */
+/* ----- End Tablet: Footer Contact ----- */
+/**/
+/* +++++ Desktop: Footer Contact +++++ */
 @media only screen and (min-width: 1200px) {}
 
+/* ----- End Desktop: Footer Contact ----- */
+/**/
 /* ==========================================================================
    Helper classes
    ========================================================================== */

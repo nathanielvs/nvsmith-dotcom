@@ -3,41 +3,38 @@
 
   <head>
     <meta charset="utf-8">
-    <title>NVSmith - Web Developer</title>
-    <meta name="description" content="personal web development portfolio for nvsmith">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    <title>NVSmith - Web Dev</title>
+
+    <meta name="description" content="personal web development portfolio for nvsmith">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="manifest" href="site.webmanifest">
     <link rel="apple-touch-icon" href="icon.png">
     <!-- Place favicon.ico in the root directory -->
+    <meta name="theme-color" content="#fafafa">
 
+    <!-- Stylesheets -->
     <link rel="stylesheet" href="css/normalize.css" type="text/css">
     <link rel="stylesheet" href="css/main.css" type="text/css">
 
-    <meta name="theme-color" content="#fafafa">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Kadwa:400,700%7CRoboto+Mono:400,700&display=swap" rel="stylesheet">
+    <!-- font-family: 'Roboto Mono', monospace;
+    font-family: 'Kadwa', serif; -->
 
     <!-- Icons -->
-    <link href="https://fonts.googleapis.com/css?family=Kadwa:400,700%7CRoboto+Mono:400,700&display=swap" rel="stylesheet">
-
-    <!-- Fonts -->
     <script src="https://kit.fontawesome.com/dfee8cf1c7.js"></script>
-
   </head>
 
   <body>
     <!--[if IE]>
     <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
   <![endif]-->
-
-    <!-- Add your site or application content here -->
-
     <header>
       <div class="wrapper">
-        <section id="banner-bar">
-          <div id="name">
-            <h1>Nathaniel V. Smith <br><span class="separator">| </span>Web Developer</h1>
-
-          </div>
+        <div id="banner">
+          <h1 id="name">Nathaniel V. Smith <br><span class="separator">| </span>Web Developer</h1> <!-- end name -->
 
           <nav>
             <ul>
@@ -46,137 +43,149 @@
               <li><a href="#contact">Contact</a></li>
             </ul>
           </nav>
-        </section> <!-- end banner-bar -->
+        </div> <!-- end banner -->
       </div> <!-- end wrapper -->
 
-      <section id="hero">
-        <div id="tagline">
-          <h2>Let's <span id="code">code</span> something cool</h2>
-        </div>
-      </section> <!-- end hero -->
+      <div id="hero">
+        <div class="wrapper">
+          <h2 id="tagline">Let's <span id="code">code </span>something cool</h2> <!-- end tagline -->
+        </div> <!-- end wrapper -->
+      </div> <!-- end hero -->
 
       <div class="wrapper">
-        <div class="photo-credit">
-          <p>Unsplash Photo by <a href="https://unsplash.com/@grohsfabian">Fabian Grohs</a></p>
-        </div><!-- end photo-credit -->
-      </div> <!-- end wrapper -->
+        <div class="credit" id="credit1">Unsplash photo by <a href="https://unsplash.com/@grohsfabian">Fabian Grohs</a></div>
+      </div>
     </header>
 
     <main id="portfolio">
       <div class="wrapper">
-        <div class="heading" id="portfolio-heading">
-          <h3>Portfolio</h3>
-        </div> <!-- end portfolio-heading -->
+        <h3 class="section-title">Portfolio</h3>
 
-        <!-- begin flexbox -->
-        <section class="project" id="proj1">
-          <h4 class="title">
-            <a href="#" target="_blank">Baroque Selection</a>
-          </h4>
+        <div class="half-width" id="project1">
+          <h4 class="title"><a href="#">Baroque Selection</a></h4>
 
-          <h5 class="type"> Restaurant Landing Page<br>from Photoshop Design Comp</h5>
-
-          <figure class="portfolio-image" id="proj1-image">
-            <a href="#" target="_blank">
-              <img src="img/baroque-selection-screenshot2.png" alt="Sausages and yellow onions on the grill">
+          <figure>
+            <a href="#">
+              <img src="img/baroque-selection-550w.png" srcset="
+                img/baroque-selection-335w.png 335w,
+                img/baroque-selection-450w.png 450w,
+                img/baroque-selection-550w.png 550w" sizes="
+                (max-width: 767px) 70vw,
+                (max-width: 1199px) 70vw,
+                40vw" alt="Sausages and yellow onions on the grill">
             </a>
           </figure>
 
           <div class="description">
-            <p>Full HTML & CSS mockup for a restaurant landing page. Highlights featured daily specials and reviews from customers.</p>
+            <p class="type">Restaurant Landing Page</p>
+
+            <p class="details">
+              Full page mockup coded from a Photoshop Design Comp.
+            </p>
           </div> <!-- end description -->
-        </section> <!-- end proj1 -->
+        </div> <!-- end project1 -->
 
+        <div class="half-width" id="project2">
+          <h4 class="title"><a href="#">JP Austin Résumé</a></h4>
 
-        <section class="project" id="proj2">
-          <h4 class="title">
-            <a href="#" target="_blank">JP Austin Résumé</a>
-          </h4>
-
-          <h5 class="type"> Single Page HTML5 & CSS3 Website</h5>
-
-          <figure class="portfolio-image" id="proj2-image">
-            <a href="#" target="_blank">
-              <img src="img/jp-austin-screenshot2.png" alt="Online resume mockup">
+          <figure>
+            <a href="#">
+              <img src="img/jp-austin-550w.png" srcset="
+                img/jp-austin-335w.png 335w,
+                img/jp-austin-450w.png 450w,
+                img/jp-austin-550w.png 550w" sizes="
+                (max-width: 767px) 70vw,
+                (max-width: 1199px) 70vw,
+                40vw" alt="Online professional résumé mockup">
             </a>
           </figure>
 
           <div class="description">
-            <p>Minimalistic online résumé as a static website. Includes a short biography, a focused summary of skills, and a myriad of contact options.</p>
+            <p class="type">Skillsharing Professional Site</p>
+
+            <p class="details">
+              Clean online résumé homepage brought to life from a simple Photoshop Design Comp.
+            </p>
           </div> <!-- end description -->
-        </section> <!-- end proj2 -->
+        </div> <!-- end project2 -->
 
-        <section class="project" id="proj3">
-          <h4 class="title">
-            <a href="#" target="_blank">Water for Everyone</a>
-          </h4>
+        <div class="half-width" id="project3">
+          <h4 class="title"><a href="#">Water for Everyone</a></h4>
 
-          <h5 class="type">Layered CSS Layouts</h5>
-
-          <figure class="portfolio-image" id="proj3-image">
-            <a href="#" target="_blank">
-              <img src="img/water-for-everyone-screenshot2.png" alt="Sophisticated page layout with a blue-green beach palette">
+          <figure>
+            <a href="#">
+              <img src="img/water-for-everyone-550w.png" srcset="
+                img/water-for-everyone-335w.png 335w,
+                img/water-for-everyone-450w.png 450w,
+                img/water-for-everyone-550w.png 550w" sizes="
+                (max-width: 767px) 70vw,
+                (max-width: 1199px) 70vw,
+                40vw" alt="Sophisticated beach theme layout with a blue and green palette">
             </a>
           </figure>
 
           <div class="description">
-            <p>Complex layout demonstration using only CSS floats and a harmonic palette scheme.</p>
+            <p class="type">Conservation Nonprofit Homepage</p>
+
+            <p class="details">
+              A complex layout demonstration utilizing only CSS floats and a harmonic palette scheme.
+            </p>
           </div> <!-- end description -->
-        </section> <!-- end proj3 -->
-        <!-- end flexbox -->
+        </div> <!-- end project3 -->
       </div> <!-- end wrapper -->
     </main>
 
     <section id="about">
       <div class="transbox">
         <div class="wrapper">
-          <div class="heading" id="about-me-heading">
-            <h3>About Me</h3>
-          </div>
+          <h3 class="section-title">About Me</h3>
 
-          <div class="about-content">
-            <div id="column1">
-              <h4 class="title" id="personal-statement">Technology is My Passion</h4>
+          <div class="half-width">
+            <div class="description">
+              <h4 class="title">Technology is My Passion</h4>
 
-              <div class="description">
-                <p>Web development is, for me, the perfect mixture of problem solving with creative expression. There's something profoundly exciting about building an idea from the ground up, cultivating it into something real, and being able to
-                  share
-                  it with the world.</p>
+              <p class="details">
+                Web development is, for me, the perfect mixture of problem solving with creative expression. There's something profoundly exciting about building an idea from the ground up, cultivating it into something real, and being able to share
+                it with the world.
+              </p>
 
-                <p>To that end, I can't wait to work with you and help make your own visions a reality.</p>
-              </div> <!-- end description 1 -->
-            </div> <!-- end column 1 -->
+              <p class="details">
+                To that end, I can't wait to work with you and help make your own visions a reality.
+              </p>
+            </div> <!-- end description -->
 
-            <div id="column2">
-              <h4 class="title" id="what-now">What I'm Doing Now</h4>
+            <div class="description">
+              <h4 class="title">What I'm Doing Now</h4>
 
-              <div class="description">
-                <p>I'm currently diving deeper into the world of JavaScript and experiementing with some funky interactive elements to make website's more responsive to user input.</p>
+              <p class="details">
+                I'm currently diving deeper into the world of JavaScript and experiementing with some funky interactive elements to make website's more responsive to user input.
+              </p>
 
-                <p>Stay tuned for a more on that later! </p>
-              </div> <!-- end description 2 -->
-            </div> <!-- end column 2 -->
-          </div> <!-- end about-content -->
+              <p class="details">
+                Stay tuned for a more on that later!
+              </p>
+            </div> <!-- end description -->
+          </div> <!-- end half-width -->
 
-          <div class="photo-credit">
-            <p>Unsplash Photo by <a href="https://unsplash.com/@euwars">Farzad Nazifi</a></p>
-          </div> <!-- end photo-credit -->
+          <div class="credit" id="credit2">Unsplash Photo by <a href="https://unsplash.com/@euwars">Farzad Nazifi</a></div>
+
+          <div class="credit" id="credit3">Unsplash Photo by <a href="https://unsplash.com/@euwars">Farzad Nazifi</a></div>
         </div> <!-- end wrapper -->
       </div> <!-- end transbox -->
-
     </section> <!-- end about -->
 
     <footer id="contact">
       <div class="wrapper">
-        <div class="heading" id="contact-heading">
-          <h3>Contact</h3>
-        </div>
+        <h3 class="section-title">Contact</h3>
 
         <address>
           <div class="social" id="hire">
             <p class="title">Hire Me</p>
-            <p>555-555-5555 <br>
-              <a href="mailto:email@example.com">email@example.com</a></p>
+
+            <p class="details">555-555-5555 <br>
+              <a href="mailto:email@example.com">email@example.com</a>
+            </p>
+
           </div> <!-- end hire -->
 
           <div class="social" id="follow">
@@ -184,26 +193,25 @@
 
             <div id="social-icons">
               <a href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
-
               <a href="https://github.com/"><i class="fab fa-github"></i></a>
-
               <a href="https://facebook.com"><i class="fab fa-facebook"></i></a>
             </div> <!-- end social-icons -->
           </div> <!-- end follow -->
 
           <div class="social" id="meet">
             <p class="title">Meet Me</p>
-            <p>Logan, UT, USA <br>
-              Let's meetup together.</p>
+            <figure id="profile-pic"><img src="img/profile-pic-bw-crop.png" alt="Nathaniel Smith"></figure>
+
+            <p class="details">
+              Logan, UT, USA <br>
+              Let's meetup together.
+            </p>
           </div> <!-- end meet -->
         </address>
 
-        <div id="copyright">
-          <p>&copy; 2019 | <a href="#banner-bar">nvsmith.com</a></p>
-        </div> <!-- end copyright -->
+        <div id="copyright">&copy; 2019 | <a href="#banner">nvsmith.com</a></div> <!-- end copyright -->
       </div> <!-- end wrapper -->
     </footer>
-
 
     <!-- SCRIPTS -->
     <script src="js/vendor/modernizr-3.7.1.min.js"></script>
