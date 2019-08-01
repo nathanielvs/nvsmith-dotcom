@@ -78,19 +78,18 @@ body {
   background-color: #131313;
 }
 
+/* Global Margins and Padding */
 .wrapper {
   margin: 0 5% 0 5%;
+}
+
+main, .transbox, footer, .section-title, .title, p, #social-icons, img {
+  padding: 10px 0 10px 0;
 }
 
 /* Central Alignments */
 .section-title, .title, footer {
   text-align: center;
-}
-
-/* Section Margins and Padding*/
-.section-title, .title, p, i {
-  padding: 10px 0 10px 0;
-  /*  border: 2px solid red;*/
 }
 
 /* Global Font Styles */
@@ -210,7 +209,7 @@ address {
 }
 
 footer #profile-pic img, #social-icons {
-  width: 70%;
+  width: 50%;
   max-width: 300px;
   margin: auto;
 }
@@ -220,8 +219,6 @@ i {
   width: 30%;
 }
 
-
-
 /**/
 @media only screen and (min-width: 768px) {
 
@@ -229,11 +226,15 @@ i {
   /* +++++++++++++++++++++ Portrait Tablet Styles  ++++++++++++++++++++ */
   /** ----- Base Portrait Tablet ----- **/
   body {
-    font-size: 1.2em;
+    font-size: 1.25em;
   }
 
-  .section-title, .title, p, i, img {
-    padding: 10px 0 10px 0;
+  main, .transbox, footer {
+    padding-bottom: 50px;
+  }
+
+  .section-title {
+    padding: 25px 0 25px 0;
   }
 
   /** ----- Header Portrait Tablet ----- **/
@@ -244,14 +245,14 @@ i {
   /** ----- Main Portfolio Portrait Tablet ----- **/
   /** ----- About Tablet ----- **/
   #about {
-    background-image: url('../img/monitors-farzad-nazifi-unsplash.jpg');
+    background-image: url('../img/paul-jewkes-ztXR9ogE5l0-unsplash2.jpg');
+    background-repeat: no-repeat;
+    background-position: center top;
     background-size: cover;
-    color: #000000;
   }
 
   .transbox {
     background: rgba(223, 206, 177, 0.9);
-    height: 100%;
   }
 
   #credit2 {
@@ -262,7 +263,6 @@ i {
   .social {
     padding-bottom: 5%;
   }
-
 }
 
 /**/
@@ -271,40 +271,37 @@ i {
   /**/
   /* +++++++++++++++++++++ Landscape Tablet Styles  ++++++++++++++++++++ */
   /** ----- Base Landscape Tablet ----- **/
-main, .transbox, footer {
-  padding-bottom: 50px;
-}
-
-.section-title {
-  padding: 25px 0 25px 0;
-}
-
   /** ----- Header Landscape Tablet ----- **/
-#name .separator {
-  display: inline;
-}
-#name br {
-  display: none;
-}
+  #name .separator {
+    display: inline;
+  }
 
-#banner {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
+  #name br {
+    display: none;
+  }
 
-nav {
-  width: 40%;
+  #banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 
-}
+  nav {
+    width: 40%;
+  }
 
-nav ul {
-  flex-wrap: wrap;
-  text-align: right;
-}
+  nav ul {
+    flex-wrap: wrap;
+    text-align: right;
+  }
 
   /** ----- Main Portfolio Landscape Tablet ----- **/
   /** ----- About Landscape Tablet ----- **/
+  #about {
+    background-image: url('../img/jakob-owens-JC9MZUBshtM-unsplash2.jpg');
+    background-position: center bottom;
+  }
+
   #about .half-width {
     display: flex;
   }
@@ -314,7 +311,7 @@ nav ul {
   }
 
   #column1 {
-    border-right: 3px solid black;
+    border-right: 2px solid black;
     padding-right: 5%;
   }
 
@@ -326,8 +323,15 @@ nav ul {
     text-align: justify;
   }
 
-  /** ----- Footer Contact Landscape Tablet ----- **/
+  #credit2 {
+    display: none;
+  }
 
+  #credit3 {
+    display: block;
+  }
+
+  /** ----- Footer Contact Landscape Tablet ----- **/
 }
 
 /**/
@@ -341,11 +345,11 @@ nav ul {
   }
 
   /** ----- Header Desktop ----- **/
+}
 
-  }
-  /** ----- Main Portfolio Desktop ----- **/
-  /** ----- About Desktop ----- **/
-  /** ----- Footer Contact Desktop ----- **/
+/** ----- Main Portfolio Desktop ----- **/
+/** ----- About Desktop ----- **/
+/** ----- Footer Contact Desktop ----- **/
 }
 
 /**/
