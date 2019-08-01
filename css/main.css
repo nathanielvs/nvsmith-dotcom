@@ -88,13 +88,11 @@ body {
   text-align: center;
 }
 
-
 /* Section Margins and Padding*/
 .section-title, .title, p, i {
-  padding: 10px 0 10px;
-/*  border: 2px solid red;*/
+  padding: 10px 0 10px 0;
+  /*  border: 2px solid red;*/
 }
-
 
 /* Global Font Styles */
 a {
@@ -140,22 +138,6 @@ img {
   display: block;
 }
 
-/* +++++ Tablet: Base Styles +++++ */
-@media only screen and (min-width: 768px) {
-
-}
-
-/* ----- End Tablet: Base Styles ----- */
-/**/
-/* +++++ Desktop: Base Styles +++++ */
-@media only screen and (min-width: 1200px) {
-  .wrapper {
-    padding: 2% 100px 2% 100px;
-  }
-
-}
-
-/* ----- End Desktop: Base Styles ----- */
 /**/
 /* =============================== HEADER ============================ */
 /**/
@@ -208,59 +190,20 @@ nav ul li {
   display: block;
 }
 
-/* +++++ Tablet: Header +++++ */
-@media only screen and (min-width: 768px) {}
-
-/* ----- End Tablet: Header ----- */
 /**/
-/* +++++ Desktop: Header +++++ */
-@media only screen and (min-width: 1200px) {}
-
-/* ----- End Desktop: Header ----- */
-/**/
-/* ========== MAIN PORTFOLIO ========== */
-/**/
-
-/* +++++ Tablet: Main Portfolio +++++ */
-@media only screen and (min-width: 768px) {}
-
-/* ----- End Tablet: Main Portfolio ----- */
-/**/
-/* +++++ Desktop: Main Portfolio +++++ */
-@media only screen and (min-width: 1200px) {}
-
-/* ----- End Desktop: Main Portfolio ----- */
+/* ====================== MAIN PORTFOLIO ========================== */
 /**/
 /* ============================= ABOUT ME ======================== */
 /**/
-
 #about {
   color: #000000;
 }
-
 
 .transbox {
   background: rgba(223, 206, 177, 1.0);
   height: 100%;
 }
 
-/* +++++ Tablet: About Me +++++ */
-@media only screen and (min-width: 768px) {
-  #about {
-    background-image: url('../img/monitors-farzad-nazifi-unsplash.jpg');
-    background-size: cover;
-    color: #000000;
-  }
-}
-
-/* ----- End Tablet: About Me ----- */
-/**/
-/* +++++ Desktop: About Me +++++ */
-@media only screen and (min-width: 1200px) {
-
-}
-
-/* ----- End Desktop: About Me ----- */
 /**/
 /* ========================== FOOTER CONTACT ========================= */
 /**/
@@ -268,25 +211,85 @@ address {
   font-style: normal;
 }
 
-
 i {
   font-size: 2.5em;
   width: 30%;
 }
 
-footer #profile-pic img{
-width: 50%;
+footer #profile-pic img {
+  width: 50%;
+  max-width: 200px;
 }
 
-/* +++++ Tablet: Footer Contact +++++ */
-@media only screen and (min-width: 768px) {}
-
-/* ----- End Tablet: Footer Contact ----- */
 /**/
-/* +++++ Desktop: Footer Contact +++++ */
-@media only screen and (min-width: 1200px) {}
+@media only screen and (min-width: 768px) {
 
-/* ----- End Desktop: Footer Contact ----- */
+  /**/
+  /* ++++++++++++++++++++++++++ Tablet Styles +++++++++++++++++++++++++ */
+  /** ----- Base Tablet ----- **/
+  body {
+    font-size: 1.6em;
+  }
+
+  /* Section Margins and Padding*/
+  main, .transbox, footer {
+    padding: 5% 0 5% 0;
+  }
+
+  .section-title, .title, p, i, img {
+    padding: 10px 0 10px 0;
+    /*  border: 2px solid red;*/
+  }
+
+  /** ----- Header Tablet ----- **/
+  #hero {
+    height: 18em;
+  }
+
+  /** ----- Main Portfolio Tablet ----- **/
+  /** ----- About Tablet ----- **/
+  #about {
+    background-image: url('../img/monitors-farzad-nazifi-unsplash.jpg');
+    background-size: cover;
+    color: #000000;
+  }
+
+  .transbox {
+    background: rgba(223, 206, 177, 0.9);
+    height: 100%;
+  }
+
+  #credit2 {
+    display: block;
+  }
+
+  /** ----- Footer Contact Tablet ----- **/
+  .social {
+    padding-bottom: 5%;
+  }
+
+  i {
+    width: 20%;
+  }
+}
+
+/**/
+@media only screen and (min-width: 1200px) {
+
+  /**/
+  /**/
+  /* +++++++++++++++++++++++ Desktop Styles ++++++++++++++++++++++++++ */
+  /** ----- Base Desktop ----- **/
+  .wrapper {
+    padding: 2% 100px 2% 100px;
+  }
+
+  /** ----- Header Desktop ----- **/
+  /** ----- Main Portfolio Desktop ----- **/
+  /** ----- About Desktop ----- **/
+  /** ----- Footer Contact Desktop ----- **/
+}
+
 /**/
 /* ==========================================================================
    Helper classes
