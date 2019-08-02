@@ -296,6 +296,32 @@ i {
   }
 
   /** ----- Main Portfolio Landscape Tablet ----- **/
+#portfolio .half-width {
+  border: 2px solid red;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 300px;
+
+}
+
+#portfolio .description {
+  border: 2px solid yellow;
+  width: 50%;
+  
+
+}
+
+#portfolio figure {
+  order: -2;
+  border: 2px solid cyan;
+  width: 50%;
+  /*height: 100%;*/
+
+
+}
+
+
   /** ----- About Landscape Tablet ----- **/
   #about {
     background-image: url('../img/jakob-owens-JC9MZUBshtM-unsplash2.jpg');
