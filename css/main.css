@@ -93,12 +93,12 @@ main, .transbox, footer, .section-title, .title, p, #social-icons, img {
 }
 
 /* Global Font Styles */
-a {
+a, i {
   text-decoration: none;
   color: #388cba;
 }
 
-a:hover {
+a:hover, i:hover {
   color: #79a3ba;
 }
 
@@ -115,7 +115,7 @@ h1, h2, h3, h4, h5, h6, nav {
   display: none;
 }
 
-#code, .section-title, i {
+#code, .section-title {
   color: #f90239;
 }
 
@@ -332,6 +332,22 @@ i {
   }
 
   /** ----- Footer Contact Landscape Tablet ----- **/
+  address {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  address #follow {
+    order: 1;
+  }
+
+  address .social {
+    width: 33%;
+  }
+
+  address #social-icons {
+    width: 100%;
+  }
 }
 
 /**/
