@@ -80,6 +80,7 @@ body {
 
 /* Global Margins and Padding */
 .wrapper {
+  border: 2px solid yellow;
   margin: 0 5% 0 5%;
 }
 
@@ -296,31 +297,34 @@ i {
   }
 
   /** ----- Main Portfolio Landscape Tablet ----- **/
-#portfolio .half-width {
-  border: 2px solid red;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  height: 300px;
+  #portfolio .half-width {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 300px;
+    margin-bottom: 100px;
+  }
 
-}
+  #portfolio .description {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-left: 50px;
+  }
 
-#portfolio .description {
-  border: 2px solid yellow;
-  width: 50%;
-  
+  #portfolio .title {
+    text-align: left;
+  }
 
-}
-
-#portfolio figure {
-  order: -2;
-  border: 2px solid cyan;
-  width: 50%;
-  /*height: 100%;*/
-
-
-}
-
+  #portfolio figure {
+    display: flex;
+    justify-content: flex-end;
+    order: -2;
+    padding-right: 50px;
+    width: 50%;
+    height: 100%;
+  }
 
   /** ----- About Landscape Tablet ----- **/
   #about {
@@ -383,7 +387,7 @@ i {
   /* +++++++++++++++++++++++ Desktop Styles ++++++++++++++++++++++++++ */
   /** ----- Base Desktop ----- **/
   .wrapper {
-    padding: 2% 100px 2% 100px;
+    padding: 0 100px 0 100px;
   }
 
   /** ----- Header Desktop ----- **/
