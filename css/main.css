@@ -70,27 +70,37 @@ html {
 
 body {
   width: 100%;
-  max-width: 1800px;
+  max-width: 1400px;
   margin: auto;
   font-family: 'Kadwa', serif;
   font-size: 1em;
   color: #ffffff;
+  text-align: justify;
   background-color: #131313;
+  padding: 15px 0 15px 0;
 }
 
 /* Global Margins and Padding */
 .wrapper {
-  border: 2px solid yellow;
   margin: 0 5% 0 5%;
 }
 
-main, .transbox, footer, .section-title, .title, p, #social-icons, img {
+main, .half-width, .transbox, footer {
+  padding: 15px 0 15px 0;
+}
+
+.section-title, .title, .social, p, i, img {
   padding: 10px 0 10px 0;
 }
 
 /* Central Alignments */
 .section-title, .title, footer {
   text-align: center;
+}
+
+img {
+  margin: auto;
+  display: block;
 }
 
 /* Global Font Styles */
@@ -112,28 +122,22 @@ h1, h2, h3, h4, h5, h6, nav {
 .credit {
   font-size: .5em;
   text-align: right;
-  padding-top: 5px;
   display: none;
-}
-
-#code, .section-title {
-  color: #f90239;
 }
 
 .section-title {
   text-transform: uppercase;
   letter-spacing: 2px;
-  font-size: 1.67em;
+  font-size: 1.5em;
+}
+
+.section-title, #code {
+  color: #f90239;
 }
 
 .title {
-  font-size: 1.2em;
+  font-size: 1.25em;
   font-weight: bold;
-}
-
-img {
-  margin: auto;
-  display: block;
 }
 
 /**/
@@ -141,7 +145,7 @@ img {
 /**/
 #banner #name, nav {
   text-align: center;
-  font-size: 1.15em;
+  font-size: 1.125em;
 }
 
 #name .separator {
@@ -160,7 +164,7 @@ nav ul li {
 #hero {
   background-image: url('../img/hero-fabian-grohs-unsplash2.jpg');
   background-size: cover;
-  height: 10em;
+  height: 15em;
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -199,7 +203,10 @@ nav ul li {
 
 .transbox {
   background: rgba(223, 206, 177, 1.0);
-  height: 100%;
+}
+
+#about .description {
+  margin-bottom: 15px;
 }
 
 /**/
@@ -209,8 +216,12 @@ address {
   font-style: normal;
 }
 
-footer #profile-pic img, #social-icons {
+footer #profile-pic img {
   width: 50%;
+  max-width: 200px;
+}
+
+footer #social-icons {
   max-width: 300px;
   margin: auto;
 }
@@ -219,18 +230,17 @@ i {
   font-size: 2.5em;
   width: 30%;
 }
-
+/* TODO: edit tablet code for redunancies and consistent font/margin styles */
 /**/
+/** +++++++++++++++++++++++++ TABLET STYLES: PORTRAIT ++++++++++++++++++ **/
 @media only screen and (min-width: 768px) {
 
-  /**/
-  /* +++++++++++++++++++++ Portrait Tablet Styles  ++++++++++++++++++++ */
-  /** ----- Base Portrait Tablet ----- **/
+  /** ======================== Base: Portrait ==================== **/
   body {
     font-size: 1.25em;
   }
 
-  main, .transbox, footer {
+  main, .half-width, .transbox, footer {
     padding-bottom: 50px;
   }
 
@@ -238,13 +248,41 @@ i {
     padding: 25px 0 25px 0;
   }
 
-  /** ----- Header Portrait Tablet ----- **/
+  /** =================== Header: Portrait ================== **/
   #hero {
-    height: 15em;
+    height: 300px;
   }
 
-  /** ----- Main Portfolio Portrait Tablet ----- **/
-  /** ----- About Tablet ----- **/
+  /** ================ Main Portfolio: Portrait ============== **/
+  #portfolio .half-width {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 300px;
+  }
+
+  #portfolio .description {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-left: 20px;
+  }
+
+  #portfolio .title {
+    text-align: left;
+  }
+
+  #portfolio figure {
+    display: flex;
+    justify-content: flex-end;
+    order: -2;
+    padding-right: 20px;
+    width: 50%;
+    height: 100%;
+  }
+
+  /** =================== About: Portrait ================== **/
   #about {
     background-image: url('../img/paul-jewkes-ztXR9ogE5l0-unsplash2.jpg');
     background-repeat: no-repeat;
@@ -253,26 +291,42 @@ i {
   }
 
   .transbox {
-    background: rgba(223, 206, 177, 0.9);
+    background: rgba(223, 206, 177, 0.8);
+  }
+
+  #about .description {
+    text-align: justify;
   }
 
   #credit2 {
     display: block;
   }
 
-  /** ----- Footer Contact Portrait Tablet ----- **/
-  .social {
-    padding-bottom: 5%;
+  /** =================== Footer Contact: Portrait ================== **/
+  address {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  address #follow {
+    order: 1;
+  }
+
+  address .social {
+    width: 33%;
+  }
+
+  address #social-icons {
+    width: 100%;
   }
 }
 
 /**/
+/** ++++++++++++++++++++ TABLET STYLES: LANDSCAPE +++++++++++++++++ **/
 @media only screen and (min-width: 1024px) {
 
-  /**/
-  /* +++++++++++++++++++++ Landscape Tablet Styles  ++++++++++++++++++++ */
-  /** ----- Base Landscape Tablet ----- **/
-  /** ----- Header Landscape Tablet ----- **/
+  /** =================== Base Styles: Landscape ================== **/
+  /** =================== Header: Landscape ================== **/
   #name .separator {
     display: inline;
   }
@@ -288,7 +342,7 @@ i {
   }
 
   nav {
-    width: 40%;
+    width: 45%;
   }
 
   nav ul {
@@ -296,7 +350,7 @@ i {
     text-align: right;
   }
 
-  /** ----- Main Portfolio Landscape Tablet ----- **/
+  /** =================== Main Portfolio: Landscape ================== **/
   #portfolio .half-width {
     display: flex;
     flex-direction: column;
@@ -326,7 +380,7 @@ i {
     height: 100%;
   }
 
-  /** ----- About Landscape Tablet ----- **/
+  /** =================== About: Landscape ================== **/
   #about {
     background-image: url('../img/jakob-owens-JC9MZUBshtM-unsplash2.jpg');
     background-position: center bottom;
@@ -361,41 +415,22 @@ i {
     display: block;
   }
 
-  /** ----- Footer Contact Landscape Tablet ----- **/
-  address {
-    display: flex;
-    justify-content: space-around;
-  }
-
-  address #follow {
-    order: 1;
-  }
-
-  address .social {
-    width: 33%;
-  }
-
-  address #social-icons {
-    width: 100%;
-  }
+  /** =================== Footer Contact: Landscape ================== **/
 }
 
 /**/
+/** +++++++++++++++++++++++++ DESKTOP STYLES ++++++++++++++++++++++++ **/
 @media only screen and (min-width: 1200px) {
 
-  /**/
-  /* +++++++++++++++++++++++ Desktop Styles ++++++++++++++++++++++++++ */
-  /** ----- Base Desktop ----- **/
-  .wrapper {
-    padding: 0 100px 0 100px;
+  /** =================== Base Styles: Desktop ================== **/
+  html {
+    background-color: white;
   }
 
-  /** ----- Header Desktop ----- **/
-}
-
-/** ----- Main Portfolio Desktop ----- **/
-/** ----- About Desktop ----- **/
-/** ----- Footer Contact Desktop ----- **/
+  /** =================== Header: Desktop ================== **/
+  /** =================== Main Portfolio: Desktop ================== **/
+  /** =================== About: Desktop ================== **/
+  /** =================== Footer Contact: Desktop ================== **/
 }
 
 /**/
