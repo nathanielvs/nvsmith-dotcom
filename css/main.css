@@ -194,6 +194,10 @@ nav ul li {
 
 /**/
 /* ====================== MAIN PORTFOLIO ========================== */
+#portfolio .half-width {
+  text-align: left;
+}
+
 /**/
 /* ============================= ABOUT ME ======================== */
 /**/
@@ -230,7 +234,7 @@ i {
   font-size: 2.5em;
   width: 30%;
 }
-/* TODO: edit tablet code for redunancies and consistent font/margin styles */
+
 /**/
 /** +++++++++++++++++++++++++ TABLET STYLES: PORTRAIT ++++++++++++++++++ **/
 @media only screen and (min-width: 768px) {
@@ -240,17 +244,17 @@ i {
     font-size: 1.25em;
   }
 
-  main, .half-width, .transbox, footer {
-    padding-bottom: 50px;
+  main, .half-width, .transbox, footer, .section-title {
+    padding: 20px 0 20px 0;
   }
 
-  .section-title {
-    padding: 25px 0 25px 0;
+  .section-title, .title, .social, p, i, img {
+    padding: 10px 0 10px 0;
   }
 
   /** =================== Header: Portrait ================== **/
   #hero {
-    height: 300px;
+    height: 500px;
   }
 
   /** ================ Main Portfolio: Portrait ============== **/
@@ -269,10 +273,6 @@ i {
     padding-left: 20px;
   }
 
-  #portfolio .title {
-    text-align: left;
-  }
-
   #portfolio figure {
     display: flex;
     justify-content: flex-end;
@@ -280,6 +280,10 @@ i {
     padding-right: 20px;
     width: 50%;
     height: 100%;
+  }
+
+  #portfolio .title {
+    text-align: left;
   }
 
   /** =================== About: Portrait ================== **/
@@ -294,10 +298,6 @@ i {
     background: rgba(223, 206, 177, 0.8);
   }
 
-  #about .description {
-    text-align: justify;
-  }
-
   #credit2 {
     display: block;
   }
@@ -309,15 +309,11 @@ i {
   }
 
   address #follow {
-    order: 1;
+    order: 2;
   }
 
   address .social {
     width: 33%;
-  }
-
-  address #social-icons {
-    width: 100%;
   }
 }
 
@@ -327,18 +323,18 @@ i {
 
   /** =================== Base Styles: Landscape ================== **/
   /** =================== Header: Landscape ================== **/
+  #banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
   #name .separator {
     display: inline;
   }
 
   #name br {
     display: none;
-  }
-
-  #banner {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
   }
 
   nav {
@@ -352,32 +348,15 @@ i {
 
   /** =================== Main Portfolio: Landscape ================== **/
   #portfolio .half-width {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    height: 300px;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
   }
 
   #portfolio .description {
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
     padding-left: 50px;
   }
 
-  #portfolio .title {
-    text-align: left;
-  }
-
   #portfolio figure {
-    display: flex;
-    justify-content: flex-end;
-    order: -2;
     padding-right: 50px;
-    width: 50%;
-    height: 100%;
   }
 
   /** =================== About: Landscape ================== **/
@@ -396,16 +375,13 @@ i {
 
   #column1 {
     border-right: 2px solid black;
-    padding-right: 5%;
+    padding-right: 50px;
   }
 
   #column2 {
-    padding-left: 5%;
+    padding-left: 50px;
   }
 
-  #about .details {
-    text-align: justify;
-  }
 
   #credit2 {
     display: none;
