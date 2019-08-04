@@ -253,7 +253,7 @@ i {
   #about {
     background-image: url('../img/paul-jewkes-ztXR9ogE5l0-unsplash2.jpg');
     background-repeat: no-repeat;
-    background-position: center top;
+    background-position: center bottom;
     background-size: cover;
   }
 
@@ -301,7 +301,7 @@ i {
   }
 
   nav {
-    width: 45%;
+    width: 40%;
   }
 
   nav ul {
@@ -321,7 +321,6 @@ i {
   /** =================== About: Landscape ================== **/
   #about {
     background-image: url('../img/jakob-owens-JC9MZUBshtM-unsplash2.jpg');
-    background-position: center bottom;
   }
 
   #about .half-width {
