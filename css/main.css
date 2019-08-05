@@ -84,7 +84,7 @@ main, .transbox, footer {
   padding: 2em 0 2em 0;
 }
 
-#banner, .half-width, .section-title, .title, .social, p, i, img {
+#banner, .half-width, .section-title, .title, figure, .social, p, i, img {
   padding: 1em 0 1em 0;
 }
 
@@ -99,9 +99,17 @@ img {
 }
 
 /* Global Font Styles */
+p:lang(es) {
+  font-style: italic;
+}
+
 a, i {
   text-decoration: none;
   color: #388cba;
+}
+
+a:hover, i:hover, .section-title, #code {
+  color: #f90239;
 }
 
 
@@ -123,11 +131,9 @@ h1, h2, h3, h4, h5, h6, nav {
   font-size: 1.5em;
 }
 
-a:hover, i:hover, .section-title, #code {
-  color: #f90239;
-}
 
-.title, #name, nav {
+
+#name, nav, .title  {
   font-size: 1.25em;
   font-weight: bold;
 }
@@ -310,6 +316,10 @@ i {
   }
 
   /** =================== Main Portfolio: Landscape ================== **/
+  #portfolio .half-width {
+    height: 350px;
+  }
+
   #portfolio .description {
     padding-left: 50px;
   }
