@@ -157,7 +157,7 @@ nav ul li {
 #hero {
   background-image: url('../img/hero-fabian-grohs-unsplash2.jpg');
   background-size: cover;
-  height: 22em;
+  height: 24em;
   display: flex;
   justify-content: flex-end;
   align-items: center;
