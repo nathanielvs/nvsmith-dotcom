@@ -84,7 +84,7 @@ body {
   padding: 2em 0 2em 0;
 }
 
-#banner, .half-width, /*.section-title,*/ .title, figure, .social, p, i, img {
+#banner, .half-width, /*.section-title,*/ .title, figure,.social, p, i, img {
   padding: 1em 0 1em 0;
 }
 
@@ -145,18 +145,31 @@ h1, h2, h3, h4, h5, h6, nav {
   display: none;
 }
 
-nav ul {
+/*nav ul {
   list-style: none;
   display: flex;
 }
 
 nav ul li {
   width: 33.3%;
-}
+}*/
 
 
 /**/
-/* ====================== MAIN PORTFOLIO ========================== */
+/* ====================== MAIN PORTFOLIO
+ ========================== */
+ nav {
+   width: 300px;
+   margin: auto;
+ }
+
+ nav ul {
+   list-style: none;
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+ }
+
 /**/
 /* ============================= ABOUT ME ======================== */
 /**/
