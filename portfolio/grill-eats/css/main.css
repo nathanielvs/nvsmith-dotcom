@@ -84,7 +84,7 @@ body {
   padding: 2em 0 2em 0;
 }
 
-#banner, .half-width, /*.section-title,*/ .title, figure,.social, p, i, img {
+#banner, .half-width, /*.section-title,*/ .title, figure, .social, p, i, img {
   padding: 1em 0 1em 0;
 }
 
