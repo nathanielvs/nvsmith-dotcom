@@ -80,11 +80,11 @@ body {
   margin: 0 5% 0 5%;
 }
 
-/*main, .transbox,*/ footer {
+main, footer {
   padding: 2em 0 2em 0;
 }
 
-#banner, .half-width, /*.section-title,*/ .title, figure,.social, p, i, img {
+#banner, .title, p, img, nav {
   padding: 1em 0 1em 0;
 }
 
@@ -112,17 +112,10 @@ a:hover, i:hover, .section-title, #code {
   color: #f90239;
 }
 
-
 h1, h2, h3, h4, h5, h6, nav {
   font-family: 'Roboto Mono', monospace;
   font-size: 1em;
   font-weight: normal;
-}
-
-.credit {
-  font-size: .5em;
-  text-align: right;
-  display: none;
 }
 
 .section-title {
@@ -131,9 +124,7 @@ h1, h2, h3, h4, h5, h6, nav {
   font-size: 1.5em;
 }
 
-
-
-#name, nav, .title  {
+#name, nav, .title {
   font-size: 1.25em;
   font-weight: bold;
 }
@@ -145,30 +136,22 @@ h1, h2, h3, h4, h5, h6, nav {
   display: none;
 }
 
-/*nav ul {
+/**/
+/* ====================== MAIN PORTFOLIO ========================== */
+nav {
+  width: 300px;
+  margin: auto;
+}
+
+nav ul {
   list-style: none;
   display: flex;
+  justify-content: center;
 }
 
 nav ul li {
-  width: 33.3%;
-}*/
-
-
-/**/
-/* ====================== MAIN PORTFOLIO
- ========================== */
- nav {
-   width: 300px;
-   margin: auto;
- }
-
- nav ul {
-   list-style: none;
-   display: flex;
-   justify-content: space-around;
-   align-items: center;
- }
+  width: 25%;
+}
 
 /**/
 /* ============================= ABOUT ME ======================== */
@@ -176,43 +159,23 @@ nav ul li {
 /**/
 /* ========================== FOOTER CONTACT ========================= */
 /**/
-
 /**/
 /** +++++++++++++++++++++++++ TABLET STYLES: PORTRAIT ++++++++++++++++++ **/
 @media only screen and (min-width: 768px) {
-
   /** ======================== Base: Portrait ==================== **/
   /** =================== Header: Portrait ================== **/
   /** ================ Main Portfolio: Portrait ============== **/
-
   /** =================== About: Portrait ================== **/
-
   /** =================== Footer Contact: Portrait ================== **/
-
+}
 
 /**/
 /** ++++++++++++++++++++ TABLET STYLES: LANDSCAPE +++++++++++++++++ **/
 @media only screen and (min-width: 1024px) {
-
   /** =================== Base Styles: Landscape ================== **/
   /** =================== Header: Landscape ================== **/
-
-
   /** =================== Main Portfolio: Landscape ================== **/
-  /*#portfolio .half-width {
-    height: 350px;
-  }
-
-  #portfolio .description {
-    padding-left: 50px;
-  }
-
-  #portfolio figure {
-    padding-right: 50px;
-  }*/
-
   /** =================== About: Landscape ================== **/
-
   /** =================== Footer Contact: Landscape ================== **/
 }
 
