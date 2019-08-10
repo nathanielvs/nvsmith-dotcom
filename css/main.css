@@ -58,6 +58,7 @@ textarea {
 /**/
 /* ============================== BASE STYLES ======================== */
 /**/
+/* ----- Global Margins and Padding ----- */
 * {
   box-sizing: border-box;
   padding: 0;
@@ -75,21 +76,20 @@ body {
   padding: 15px 0 15px 0;
 }
 
-/* Global Margins and Padding */
 .wrapper {
   margin: 0 5% 0 5%;
 }
 
-main, .transbox, footer {
+#banner, main, .transbox, footer {
   padding: 2em 0 2em 0;
 }
 
-#banner, .half-width, .section-title, .title, figure, .social, p, i, img {
+ .half-width, .section-title, .title, figure, .social, p, i, img {
   padding: 1em 0 1em 0;
 }
 
-/* Central Alignments */
-.section-title, .title, footer, #name, nav {
+/* ----- Central Alignments ----- */
+.section-title, .title, .type, footer, #name, nav {
   text-align: center;
 }
 
@@ -98,7 +98,7 @@ img {
   display: block;
 }
 
-/* Global Font Styles */
+/* ----- Global Font Styles ----- */
 p:lang(es) {
   font-style: italic;
 }
@@ -108,9 +108,15 @@ a, i {
   color: #388cba;
 }
 
-a:hover, i:hover, .section-title, #code {
+a:hover, i:hover, .section-title, #code{
   color: #f90239;
 }
+
+#portfolio img:hover {
+  border: 1px solid #f90239;
+}
+
+
 
 
 h1, h2, h3, h4, h5, h6, nav {
@@ -132,11 +138,11 @@ h1, h2, h3, h4, h5, h6, nav {
 }
 
 
-
-#name, nav, .title  {
+header #name, nav, .title  {
   font-size: 1.25em;
   font-weight: bold;
 }
+
 
 /**/
 /* =============================== HEADER ============================ */
@@ -158,6 +164,8 @@ nav ul li {
   background-image: url('../img/hero-fabian-grohs-unsplash2.jpg');
   background-size: cover;
   height: 24em;
+  background-position: center;
+  background-attachment: fixed;
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -165,7 +173,7 @@ nav ul li {
 
 #hero #tagline {
   text-align: right;
-  font-size: 2.2em;
+  font-size: 2.4em;
   text-shadow:
     -1px -1px 0 #000000,
     1px -1px 0 #000000,
@@ -187,9 +195,11 @@ nav ul li {
 
 /**/
 /* ====================== MAIN PORTFOLIO ========================== */
+#portfolio .type {
+  font-size: 1.1em;
+}
 /**/
 /* ============================= ABOUT ME ======================== */
-/**/
 #about {
   color: #000000;
 }
@@ -197,6 +207,8 @@ nav ul li {
 .transbox {
   background: rgba(223, 206, 177, 1.0);
 }
+/**/
+
 
 /**/
 /* ========================== FOOTER CONTACT ========================= */
@@ -211,7 +223,7 @@ footer #profile-pic img {
 }
 
 footer .social p.details {
-  line-height: 1.5em;
+  line-height: 2em;
 }
 
 footer #social-icons {
@@ -235,7 +247,7 @@ i {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    height: 300px;
+    height: 350px;
   }
 
   #portfolio .description {
@@ -255,7 +267,7 @@ i {
     height: 100%;
   }
 
-  #portfolio .title {
+  #portfolio .title, #portfolio .type {
     text-align: left;
   }
 
