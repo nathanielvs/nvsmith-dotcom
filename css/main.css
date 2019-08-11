@@ -80,7 +80,7 @@ body {
   margin: 0 5% 0 5%;
 }
 
-header, main, .transbox, footer {
+main, .transbox, footer {
   padding: 2em 0 2em 0;
 }
 
