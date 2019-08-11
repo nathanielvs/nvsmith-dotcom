@@ -152,6 +152,10 @@ h1, h2, h3, h4, h5, h6, nav {
   margin: auto;
 }
 
+.download {
+  font-style: italic;
+}
+
 nav {
   width: 300px;
   margin: auto;
