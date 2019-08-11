@@ -84,7 +84,7 @@ body {
   padding: 2em 0 2em 0;
 }
 
- .half-width, .section-title, .title, figure, .social, p, i, img {
+.half-width, .section-title, .title, figure, .social, p, i, img {
   padding: 1em 0 1em 0;
 }
 
@@ -108,16 +108,13 @@ a, i {
   color: #388cba;
 }
 
-a:hover, i:hover, .section-title, #code{
+a:hover, i:hover {
+  color: #7b69a7;
+}
+
+.section-title, #code {
   color: #f90239;
 }
-
-#portfolio img:hover {
-  border: 1px solid #f90239;
-}
-
-
-
 
 h1, h2, h3, h4, h5, h6, nav {
   font-family: 'Roboto Mono', monospace;
@@ -126,7 +123,7 @@ h1, h2, h3, h4, h5, h6, nav {
 }
 
 .credit {
-  font-size: .5em;
+  font-size: 0.75em;
   text-align: right;
   display: none;
 }
@@ -137,12 +134,10 @@ h1, h2, h3, h4, h5, h6, nav {
   font-size: 1.5em;
 }
 
-
-header #name, nav, .title  {
+header #name, nav, .title {
   font-size: 1.25em;
   font-weight: bold;
 }
-
 
 /**/
 /* =============================== HEADER ============================ */
@@ -198,6 +193,12 @@ nav ul li {
 #portfolio .type {
   font-size: 1.1em;
 }
+
+#portfolio img:hover {
+  padding: 0px;
+  box-shadow: -10px 10px #7b69a7;
+}
+
 /**/
 /* ============================= ABOUT ME ======================== */
 #about {
@@ -207,9 +208,8 @@ nav ul li {
 .transbox {
   background: rgba(223, 206, 177, 1.0);
 }
+
 /**/
-
-
 /**/
 /* ========================== FOOTER CONTACT ========================= */
 /**/
