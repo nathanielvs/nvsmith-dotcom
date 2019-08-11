@@ -80,11 +80,11 @@ body {
   margin: 0 5% 0 5%;
 }
 
-#banner, main, .transbox, footer {
+header, main, .transbox, footer {
   padding: 2em 0 2em 0;
 }
 
-.half-width, .section-title, .title, figure, .social, p, i, img {
+#banner, .half-width, .title, figure, .social, p, i, img {
   padding: 1em 0 1em 0;
 }
 
