@@ -84,7 +84,7 @@ main, .transbox, footer {
   padding: 2em 0 2em 0;
 }
 
-#banner, .half-width, .title, figure, .social, p, i, img {
+#banner, .half-width, .section-title, .title, figure, .social, p, i, img {
   padding: 1em 0 1em 0;
 }
 
@@ -195,8 +195,7 @@ nav ul li {
 }
 
 #portfolio img:hover {
-  padding: 0px;
-  box-shadow: -10px 10px #7b69a7;
+  border: 2px solid #7b69a7;
 }
 
 /**/
