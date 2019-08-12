@@ -190,6 +190,10 @@ nav ul li {
 
 /**/
 /* ====================== MAIN PORTFOLIO ========================== */
+#portfolio .download {
+  font-style: italic;
+}
+
 #portfolio .type {
   font-size: 1.1em;
 }
